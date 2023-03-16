@@ -1,21 +1,33 @@
 //
 // TestTableViewController.m
-// HinaData
+// SensorsData
 //
-// Created by hina on 2022/10/16.
-// Copyright © 2018-2024 Hina Data Co., Ltd. All rights reserved.
-
+// Created by 王灼洲 on 2017/10/16.
+// Copyright © 2015-2022 Sensors Data Co., Ltd. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
 
 #import "TestTableViewController.h"
-#import <HinaDataSDK/HinaDataSDK.h>
-@interface HNTableHeaderFooterView : UITableViewHeaderFooterView
+#import <HinaCloudSDK/HinaCloudSDK.h>
+@interface SATableHeaderFooterView : UITableViewHeaderFooterView
 @property(nonatomic,assign)NSUInteger section;
 @property(nonatomic,weak)UITableView *tablView;
 @property(nonatomic,strong)UIButton *backButton;
 @property(nonatomic,strong)NSString *title;
 @property(nonatomic,copy)void (^clickHeader)(UITableView *tableView, NSUInteger section);
 @end
-@implementation HNTableHeaderFooterView
+@implementation SATableHeaderFooterView
 -(instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
         self.backButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -74,11 +86,11 @@
     self.tableView = [[UITableView alloc]initWithFrame:table_frame style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.hinaDataViewID = @"tableView1";
+    self.tableView.sensorsAnalyticsViewID = @"tableView1";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    [self.tableView registerClass:HNTableHeaderFooterView.class forHeaderFooterViewReuseIdentifier:@"HNTableHeaderFooterView"];
+    [self.tableView registerClass:SATableHeaderFooterView.class forHeaderFooterViewReuseIdentifier:@"SATableHeaderFooterView"];
     [self.view addSubview:self.tableView];
-    HNTableHeaderFooterView *headerView = [[HNTableHeaderFooterView alloc]initWithReuseIdentifier:nil];
+    SATableHeaderFooterView *headerView = [[SATableHeaderFooterView alloc]initWithReuseIdentifier:nil];
     headerView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 60);
     [headerView.backButton setTitle:@"tableHeaderView" forState:UIControlStateNormal];
     headerView.tablView = self.tableView;
@@ -87,7 +99,7 @@
     };
     headerView.backButton.backgroundColor = UIColor.redColor;
     self.tableView.tableHeaderView = headerView;
-    HNTableHeaderFooterView *footerView = [[HNTableHeaderFooterView alloc]initWithReuseIdentifier:nil];
+    SATableHeaderFooterView *footerView = [[SATableHeaderFooterView alloc]initWithReuseIdentifier:nil];
     footerView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 60);
     [footerView.backButton setTitle:@"tableFooterView" forState:UIControlStateNormal];
     footerView.tablView = self.tableView;
@@ -113,9 +125,9 @@
     self.tableView_1 = [[UITableView alloc]initWithFrame:table_1_frame style:UITableViewStylePlain];
     self.tableView_1.delegate = self;
     self.tableView_1.dataSource = self;
-    self.tableView_1.hinaDataViewID = @"tableView2";
+    self.tableView_1.sensorsAnalyticsViewID = @"tableView2";
     [self.tableView_1 registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-//   [self.tableView_1 registerClass:HNTableHeaderFooterView.class forHeaderFooterViewReuseIdentifier:@"HNTableHeaderFooterView"];
+//   [self.tableView_1 registerClass:SATableHeaderFooterView.class forHeaderFooterViewReuseIdentifier:@"SATableHeaderFooterView"];
 
     [self.view addSubview:self.tableView_1];
 
@@ -182,9 +194,9 @@
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    HNTableHeaderFooterView *sectionFooterView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"HNTableHeaderFooterView"];
+    SATableHeaderFooterView *sectionFooterView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"SATableHeaderFooterView"];
     if (sectionFooterView == nil) {
-        sectionFooterView = [[HNTableHeaderFooterView alloc]initWithReuseIdentifier:@"HNTableHeaderFooterView"];
+        sectionFooterView = [[SATableHeaderFooterView alloc]initWithReuseIdentifier:@"SATableHeaderFooterView"];
     }
     [sectionFooterView.backButton setTitle:[NSString stringWithFormat:@"footer_section_%ld",(long)section] forState:UIControlStateNormal];
 //   sectionFooterView.backgroundColor = UIColor.blackColor;
@@ -196,9 +208,9 @@
     return sectionFooterView;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    HNTableHeaderFooterView *sectionHeaderView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"HNTableHeaderFooterView"];
+    SATableHeaderFooterView *sectionHeaderView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"SATableHeaderFooterView"];
     if (sectionHeaderView == nil) {
-        sectionHeaderView = [[HNTableHeaderFooterView alloc]initWithReuseIdentifier:@"HNTableHeaderFooterView"];
+        sectionHeaderView = [[SATableHeaderFooterView alloc]initWithReuseIdentifier:@"SATableHeaderFooterView"];
     }
     [sectionHeaderView.backButton setTitle:[NSString stringWithFormat:@"header_section_%ld",(long)section] forState:UIControlStateNormal];
 //   sectionHeaderView.backgroundColor = UIColor.blueColor;

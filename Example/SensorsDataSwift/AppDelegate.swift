@@ -1,13 +1,25 @@
 //
 // AppDelegate.swift
-// HinaDataSwift
+// SensorsDataSwift
 //
-// Created by hina on 2022/11/9.
-// Copyright © 2018-2024 Hina Data Co., Ltd. All rights reserved.
-
+// Created by 王灼洲 on 2017/11/9.
+// Copyright © 2015-2022 Sensors Data Co., Ltd. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
 
 import UIKit
-import HinaDataSDK
+import HinaCloudSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,18 +31,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         //MARK:初始化sdk
-        let options = HNConfigOptions(serverURL: "http://sdk-test.cloud.hinadata.cn:8006/sa?project=default&token=95c73ae661f85aa0", launchOptions: launchOptions)
+        let options = HNBuildOptions(serverURL: "http://sdk-test.cloud.sensorsdata.cn:8006/sa?project=default&token=95c73ae661f85aa0", launchOptions: launchOptions)
         options.maxCacheSize = 10000;
         options.autoTrackEventType = [.eventTypeAppClick,.eventTypeAppStart,.eventTypeAppEnd,.eventTypeAppViewScreen]
         options.enableVisualizedAutoTrack = true
         options.enableHeatMap = true
-        HinaDataSDK.start(configOptions: options)
+        HinaCloudSDK.start(configOptions: options)
 
-        HinaDataSDK.sharedInstance()?.setFlushNetworkPolicy(HinaDataNetworkType.typeALL)
+        HinaCloudSDK.sharedInstance()?.setFlushNetworkPolicy(HNNetworkType.typeALL)
 
         let dict: Dictionary = ["key": "value", "key1": "value1"]
-        HinaDataSDK.sharedInstance()?.track("testEvent", withProperties: dict)
-        HinaDataSDK.sharedInstance()?.enableTrackScreenOrientation(true)
+        HinaCloudSDK.sharedInstance()?.track("testEvent", withProperties: dict)
+        HinaCloudSDK.sharedInstance()?.enableTrackScreenOrientation(true)
 
         window = UIWindow()
         let rootVC: UIViewController = ViewController()

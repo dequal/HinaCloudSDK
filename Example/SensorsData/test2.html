@@ -13,7 +13,7 @@
 
 (function(para) {
   var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
-  w['hinaDataAnalytic201505'] = n;
+  w['sensorsDataAnalytic201505'] = n;
   w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
   var ifs = ['track','quick','register','registerPage','registerOnce','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify','login','logout','trackLink','clearAllRegister','getAppStatus'];
   for (var i = 0; i < ifs.length; i++) {
@@ -38,11 +38,11 @@
 
 
 })({
-sdk_url:'http://static.hinadata.cn/sdk/test/hinadata.full.js',
-heatmap_url:'http://static.hinadata.cn/sdk/test/heatmap.min.js',
+sdk_url:'http://static.sensorsdata.cn/sdk/test/sensorsdata.full.js',
+heatmap_url:'http://static.sensorsdata.cn/sdk/test/heatmap.min.js',
 use_app_track:true,
   name: 'sa',
-  server_url: 'http://sdk-test.cloud.hinadata.cn:8006/sa?project=default&token=95c73ae661f85aa0'
+  server_url: 'http://sdk-test.cloud.sensorsdata.cn:8006/sa?project=default&token=95c73ae661f85aa0'
 });
         
         sa.quick('autoTrack');

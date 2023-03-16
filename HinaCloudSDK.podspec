@@ -16,17 +16,17 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HinaCloudSDK"
-  spec.version      = "2.0.0"
-  spec.summary      = "A track sdk."
+  spec.version      = "1.0.0"
+  spec.summary      = "HinaCloudSDK sum."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "A short description of HinaCloudSDK."
+  spec.description  = "HinaCloudSDK, ios tracking tool"
 
-  spec.homepage     = "https://www.baidu.com"
+  spec.homepage     = "https://himanual.hinadt.com"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "1.0.5" }
+  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "HinaDataSDK", "HinaDataSDK/**/*.{h,m}"
+  spec.source_files  = "HinaCloudSDK", "HinaCloudSDK/**/*.{h}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

@@ -43,33 +43,12 @@
 		CB30C26B2284230F0004061D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB30C25E2284227C0004061D /* libz.tbd */; };
 		CB6EBB4E22857075003CFBA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB30C1D2228414420004061D /* Main.storyboard */; };
 		CB6EBB4F2285707D003CFBA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB30C1D0228414420004061D /* LaunchScreen.storyboard */; };
-		FA52F44E29C2EDED00322F09 /* HinaDataSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA52F44D29C2EDED00322F09 /* HinaDataSDK.framework */; };
-		FA52F44F29C2EDED00322F09 /* HinaDataSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA52F44D29C2EDED00322F09 /* HinaDataSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA448002299E022A0028AC51 /* HinaCloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA448001299E022A0028AC51 /* HinaCloudSDK.framework */; };
+		FA448003299E022A0028AC51 /* HinaCloudSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA448001299E022A0028AC51 /* HinaCloudSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FCA9E9AF2502399600837A31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB30C24C228422090004061D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FA52F45429C2EF1900322F09 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA52F45029C2EF1900322F09 /* HinaDataSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CB6EBAE3228551EC003CFBA8;
-			remoteInfo = HinaDataTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		CB30C21F228415E40004061D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FA52F44F29C2EDED00322F09 /* HinaDataSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CB30C2372284173B0004061D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +65,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA448004299E022A0028AC51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA448003299E022A0028AC51 /* HinaCloudSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +132,7 @@
 		CB30C25E2284227C0004061D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CB30C260228422830004061D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		CB30C268228422B40004061D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		FA52F44D29C2EDED00322F09 /* HinaDataSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HinaDataSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA52F45029C2EF1900322F09 /* HinaDataSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HinaDataSDK.xcodeproj; path = ../HinaDataSDK.xcodeproj; sourceTree = "<group>"; };
+		FA448001299E022A0028AC51 /* HinaCloudSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HinaCloudSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,9 +151,9 @@
 				CB30C2552284223B0004061D /* CoreLocation.framework in Frameworks */,
 				CB30C2532284222D0004061D /* CoreMotion.framework in Frameworks */,
 				CB30C251228422210004061D /* CFNetwork.framework in Frameworks */,
+				FA448002299E022A0028AC51 /* HinaCloudSDK.framework in Frameworks */,
 				CB30C24F228422190004061D /* CoreFoundation.framework in Frameworks */,
 				CB30C24B228421F60004061D /* QuartzCore.framework in Frameworks */,
-				FA52F44E29C2EDED00322F09 /* HinaDataSDK.framework in Frameworks */,
 				CB30C249228421E80004061D /* Foundation.framework in Frameworks */,
 				CB30C2222284165A0004061D /* WebKit.framework in Frameworks */,
 			);
@@ -186,7 +175,6 @@
 		CB30C0AF2284115D0004061D = {
 			isa = PBXGroup;
 			children = (
-				FA52F45029C2EF1900322F09 /* HinaDataSDK.xcodeproj */,
 				CB30C1D7228414420004061D /* SensorsData */,
 				CB30C1CD228414420004061D /* SensorsDataSwift */,
 				CB30C0B92284115D0004061D /* Products */,
@@ -259,7 +247,7 @@
 		CB30C2202284165A0004061D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA52F44D29C2EDED00322F09 /* HinaDataSDK.framework */,
+				FA448001299E022A0028AC51 /* HinaCloudSDK.framework */,
 				4DC0584D232F7C16008D5C7E /* AdSupport.framework */,
 				CB30C268228422B40004061D /* SafariServices.framework */,
 				CB30C260228422830004061D /* libsqlite3.tbd */,
@@ -280,14 +268,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA52F45129C2EF1900322F09 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FA52F45529C2EF1900322F09 /* HinaDataTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,8 +278,8 @@
 				CB30C158228413B20004061D /* Sources */,
 				CB30C159228413B20004061D /* Frameworks */,
 				CB30C15A228413B20004061D /* Resources */,
-				CB30C21F228415E40004061D /* Embed Frameworks */,
 				CB30C2372284173B0004061D /* Embed App Extensions */,
+				FA448004299E022A0028AC51 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,12 +343,6 @@
 			mainGroup = CB30C0AF2284115D0004061D;
 			productRefGroup = CB30C0B92284115D0004061D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FA52F45129C2EF1900322F09 /* Products */;
-					ProjectRef = FA52F45029C2EF1900322F09 /* HinaDataSDK.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				CB30C15B228413B20004061D /* SensorsData */,
@@ -376,16 +350,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FA52F45529C2EF1900322F09 /* HinaDataTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = HinaDataTests.xctest;
-			remoteRef = FA52F45429C2EF1900322F09 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CB30C15A228413B20004061D /* Resources */ = {
@@ -527,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -580,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -597,12 +561,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ANGCGXGPK;
 				INFOPLIST_FILE = "$(SRCROOT)/SensorsData/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hinadata.HinaData;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.HinaCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -617,12 +581,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ANGCGXGPK;
 				INFOPLIST_FILE = "$(SRCROOT)/SensorsData/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hinadata.HinaData;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.HinaCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -634,14 +598,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5ANGCGXGPK;
+				DEVELOPMENT_TEAM = 75FYWDWHL5;
 				INFOPLIST_FILE = SensorsDataSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hinadata.HinaDataSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.SensorsDataSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -656,14 +620,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5ANGCGXGPK;
+				DEVELOPMENT_TEAM = 75FYWDWHL5;
 				INFOPLIST_FILE = SensorsDataSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hinadata.HinaDataSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.sensorsdata.SensorsDataSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
