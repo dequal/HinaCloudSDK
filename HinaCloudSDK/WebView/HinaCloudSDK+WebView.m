@@ -1,6 +1,6 @@
 //
 // HinaCloudSDK+SAWebView.m
-// SensorsAnalyticsSDK
+// HinaCloudSDK
 //
 // Created by 张敏超🍎 on 2020/8/12.
 // Copyright © 2020 Sensors Data Co., Ltd. All rights reserved.
@@ -28,7 +28,7 @@
 
 #import "HinaCloudSDK+WebView.h"
 #import "HinaCloudSDK+Private.h"
-#import "SensorsAnalyticsSDK.h"
+#import "HinaCloudSDK.h"
 #import "SAConstants+Private.h"
 #import "SACommonUtility.h"
 #import "SAConstants.h"
@@ -39,7 +39,7 @@
 static NSString * const kSAJSGetAppInfoScheme = @"sensorsanalytics://getAppInfo";
 static NSString * const kSAJSTrackEventNativeScheme = @"sensorsanalytics://trackEvent";
 
-@interface SensorsAnalyticsSDK (SAWebViewPrivate)
+@interface HinaCloudSDK (SAWebViewPrivate)
 
 @property (atomic, copy) NSString *userAgent;
 @property (nonatomic, copy) NSString *addWebViewUserAgent;
@@ -48,7 +48,7 @@ static NSString * const kSAJSTrackEventNativeScheme = @"sensorsanalytics://track
 
 @end
 
-@implementation SensorsAnalyticsSDK (WebView)
+@implementation HinaCloudSDK (WebView)
 
 - (void)loadUserAgentWithCompletion:(void (^)(NSString *))completion {
     if (self.userAgent) {

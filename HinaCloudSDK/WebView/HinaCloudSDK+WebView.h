@@ -1,6 +1,6 @@
 //
 // HinaCloudSDK+WebView.h
-// SensorsAnalyticsSDK
+// HinaCloudSDK
 //
 // Created by 张敏超🍎 on 2020/8/12.
 // Copyright © 2020 Sensors Data Co., Ltd. All rights reserved.
@@ -18,11 +18,11 @@
 // limitations under the License.
 //
 
-#import "SensorsAnalyticsSDK.h"
+#import "HinaCloudSDK.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SensorsAnalyticsSDK (WebView)
+@interface HinaCloudSDK (WebView)
 
 /**
  * @abstract

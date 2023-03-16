@@ -1,6 +1,6 @@
 //
 // HinaCloudSDK+WKWebView.m
-// SensorsAnalyticsSDK
+// HinaCloudSDK
 //
 // Created by 张敏超🍎 on 2020/11/4.
 // Copyright © 2020 Sensors Data Co., Ltd. All rights reserved.
@@ -39,7 +39,7 @@
 static NSString * const kSAJSGetAppInfoScheme = @"sensorsanalytics://getAppInfo";
 static NSString * const kSAJSTrackEventNativeScheme = @"sensorsanalytics://trackEvent";
 
-@interface SensorsAnalyticsSDK (WKWebViewPrivate)
+@interface HinaCloudSDK (WKWebViewPrivate)
 
 @property (atomic, copy) NSString *userAgent;
 @property (nonatomic, copy) NSString *addWebViewUserAgent;
@@ -51,7 +51,7 @@ static NSString * const kSAJSTrackEventNativeScheme = @"sensorsanalytics://track
 
 @end
 
-@implementation SensorsAnalyticsSDK (WKWebView)
+@implementation HinaCloudSDK (WKWebView)
 
 #pragma mark - setter/getter
 - (void)setWkWebView:(WKWebView *)wkWebView {

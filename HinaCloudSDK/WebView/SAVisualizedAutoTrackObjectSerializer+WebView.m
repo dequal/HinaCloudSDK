@@ -1,6 +1,6 @@
 //
 // SAVisualizedAutoTrackObjectSerializer+WebView.m
-// SensorsAnalyticsSDK
+// HinaCloudSDK
 //
 // Created by 储强盛 on 2020/12/12.
 // Copyright © 2020 Sensors Data Co., Ltd. All rights reserved.
