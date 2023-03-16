@@ -7,76 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		450BAFB327F5A17B004978EC /* HNNetworkInfoPropertyPluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BAFB227F5A17B004978EC /* HNNetworkInfoPropertyPluginTests.m */; };
-		451427A12796B353004DE16C /* HNPresetPropertyObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 451427A02796B353004DE16C /* HNPresetPropertyObjectTest.m */; };
-		451427A32796BD85004DE16C /* HNPhonePresetPropertyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 451427A22796BD85004DE16C /* HNPhonePresetPropertyTest.m */; };
-		451427A52796C5A1004DE16C /* HNCatalystPresetPropertyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 451427A42796C5A1004DE16C /* HNCatalystPresetPropertyTest.m */; };
-		4D3F15C42787ED5900C16EA3 /* HNVisualizedUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3F15C32787ED5900C16EA3 /* HNVisualizedUtilsTest.m */; };
-		4D6A189122978F5B00F6B218 /* ElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A188E22978F5B00F6B218 /* ElementViewController.m */; };
-		4DDE42D129262A13007EDA27 /* HNDatabaseUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F214CE57249A07DF00A2633D /* HNDatabaseUnitTest.m */; };
-		4DDE42D229262A18007EDA27 /* HNEventStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 880F37D924AC34A4005AC8A0 /* HNEventStoreTests.m */; };
-		4DDE42D329262A1F007EDA27 /* HNAutoTrackUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A188F22978F5B00F6B218 /* HNAutoTrackUtilsTest.m */; };
-		4DDE42D529262A2D007EDA27 /* HinaDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6EBAE5228551EC003CFBA8 /* HinaDataTest.m */; };
 		883ED1A22768AF0900A0706A /* HNAESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ED19F2768AF0900A0706A /* HNAESCrypt.m */; };
 		883ED1AB27699A3500A0706A /* HNBaseStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 883ED1A927699A3500A0706A /* HNBaseStoreManager.m */; };
-		886CD6C0280FE60F006A6DBA /* HNInterceptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 886CD6BF280FE60F006A6DBA /* HNInterceptorTests.m */; };
-		886CD6C2280FEDF9006A6DBA /* HNSerialQueueInterceptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 886CD6C1280FEDF9006A6DBA /* HNSerialQueueInterceptorTests.m */; };
-		886CD6C4280FF0FF006A6DBA /* HNDynamicSuperPropertyInterceptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 886CD6C3280FF0FF006A6DBA /* HNDynamicSuperPropertyInterceptorTests.m */; };
-		886CD6C6280FF2E8006A6DBA /* HNRemoteConfigInterceptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 886CD6C5280FF2E8006A6DBA /* HNRemoteConfigInterceptorTests.m */; };
-		886CD6C828101C71006A6DBA /* HNEventValidateInterceptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 886CD6C728101C71006A6DBA /* HNEventValidateInterceptorTests.m */; };
-		886CD6CA281136D4006A6DBA /* HNIDMappingInterceptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 886CD6C9281136D4006A6DBA /* HNIDMappingInterceptorTests.m */; };
-		886CD6CC28113FD2006A6DBA /* HNEventResultInterceptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 886CD6CB28113FD2006A6DBA /* HNEventResultInterceptorTests.m */; };
-		886E1E1E2726A0600084D1B3 /* HNPresetPropertyPluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 886E1E1D2726A0600084D1B3 /* HNPresetPropertyPluginTests.m */; };
-		88C9062727589B0200A2712C /* HNAESStorePluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C9062627589B0200A2712C /* HNAESStorePluginTests.m */; };
 		88C9062827589B0A00A2712C /* HNAESStorePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC2DFA275768EE00EF9778 /* HNAESStorePlugin.m */; };
 		88C9062927589B0C00A2712C /* HNUserDefaultsStorePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC2DFE2757693600EF9778 /* HNUserDefaultsStorePlugin.m */; };
 		88C9062A27589B1100A2712C /* HNFileStorePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC2DF6275768DE00EF9778 /* HNFileStorePlugin.m */; };
-		88C9062D2759EBF500A2712C /* HNFileStorePluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C9062C2759EBF500A2712C /* HNFileStorePluginTests.m */; };
-		88C9062F2759EC2B00A2712C /* HNUserDefaultsStorePluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C9062E2759EC2B00A2712C /* HNUserDefaultsStorePluginTests.m */; };
-		88C906312759EEEE00A2712C /* HNBaseStoreManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C906302759EEEE00A2712C /* HNBaseStoreManagerTests.m */; };
-		88E6BED4277F0CCA006B1E4C /* HNStoreManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E6BED3277F0CCA006B1E4C /* HNStoreManagerTests.m */; };
-		88E6BED6278D2930006B1E4C /* HNDeviceIDPropertyPluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E6BED5278D2930006B1E4C /* HNDeviceIDPropertyPluginTests.m */; };
 		88F21AE528081D3900EDAFF4 /* HNNodeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5537827FD6A5400D95E7C /* HNNodeObject.m */; };
 		88F21AE628081D3D00EDAFF4 /* HNFlowData.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ED6BD327BE320700888FBC /* HNFlowData.m */; };
 		88F21AE728081D4100EDAFF4 /* HNTaskObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5537427FD6A3C00D95E7C /* HNTaskObject.m */; };
 		88F21AE828081D4400EDAFF4 /* HNFlowObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5537027FD6A3100D95E7C /* HNFlowObject.m */; };
 		88F21AE928081D4600EDAFF4 /* HNFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ED6BCF27BE2ECB00888FBC /* HNFlowManager.m */; };
-		88F21AEB28091B3700EDAFF4 /* HNFlowObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F21AEA28091B3700EDAFF4 /* HNFlowObjectTests.m */; };
-		88F21AED28091DD800EDAFF4 /* HNTaskObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F21AEC28091DD800EDAFF4 /* HNTaskObjectTests.m */; };
-		88F21AEF28091DE800EDAFF4 /* HNNodeObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F21AEE28091DE800EDAFF4 /* HNNodeObjectTests.m */; };
-		88F21AF128094F7F00EDAFF4 /* hina_data_node.json in Resources */ = {isa = PBXBuildFile; fileRef = 88F21AF028094F7F00EDAFF4 /* hina_data_node.json */; };
-		88F21AF32809546000EDAFF4 /* hina_data_task.json in Resources */ = {isa = PBXBuildFile; fileRef = 88F21AF22809546000EDAFF4 /* hina_data_task.json */; };
-		88F21AF528095EBE00EDAFF4 /* hina_data_flow.json in Resources */ = {isa = PBXBuildFile; fileRef = 88F21AF428095EBE00EDAFF4 /* hina_data_flow.json */; };
-		88F772D9280FA60000B792BB /* HNFlowManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F772D8280FA60000B792BB /* HNFlowManagerTests.m */; };
-		A826F51227292FB600934D3E /* HNKeyChainItemWrapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A826F51127292FB600934D3E /* HNKeyChainItemWrapperTest.m */; };
-		A826F51827293C8B00934D3E /* HNTrackTimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A826F51727293C8B00934D3E /* HNTrackTimerTest.m */; };
-		A8302C3C2726B2E6006E78CC /* HNProfileEventObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8302C3B2726B2E6006E78CC /* HNProfileEventObjectTest.m */; };
-		A8302C3E2726B900006E78CC /* HNPropertyValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8302C3D2726B900006E78CC /* HNPropertyValidatorTest.m */; };
-		A8302C402726C65A006E78CC /* HNTrackEventObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8302C3F2726C65A006E78CC /* HNTrackEventObjectTest.m */; };
-		A8A2BBC72722AB4900B2DEDC /* HNURLUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBBE2722AB4900B2DEDC /* HNURLUtilsTest.m */; };
-		A8A2BBC92722AB4900B2DEDC /* HNNSStringHashCodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBC02722AB4900B2DEDC /* HNNSStringHashCodeTest.m */; };
-		A8A2BBCA2722AB4900B2DEDC /* HNJSONUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBC12722AB4900B2DEDC /* HNJSONUtilTest.m */; };
-		A8A2BBCB2722AB4900B2DEDC /* HNCommonUtilityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBC22722AB4900B2DEDC /* HNCommonUtilityTest.m */; };
-		A8A2BBCC2722AB4900B2DEDC /* HNGzipUtilityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBC32722AB4900B2DEDC /* HNGzipUtilityTest.m */; };
-		A8A2BBCD2722AB4900B2DEDC /* HNValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBC42722AB4900B2DEDC /* HNValidatorTest.m */; };
-		A8A2BBCE2722AB4900B2DEDC /* HNUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBC52722AB4900B2DEDC /* HNUtilsTest.m */; };
-		A8A2BBCF2722AB4900B2DEDC /* HNDateFormatterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBC62722AB4900B2DEDC /* HNDateFormatterTest.m */; };
-		A8A2BBD22722AB6100B2DEDC /* HNLogMessageTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBD12722AB6100B2DEDC /* HNLogMessageTest.m */; };
-		A8A2BBD82722AB6F00B2DEDC /* HNIdentifierTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBD52722AB6F00B2DEDC /* HNIdentifierTest.m */; };
-		A8A2BBDE2722AF8300B2DEDC /* HNBaseEventObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBDD2722AF8300B2DEDC /* HNBaseEventObjectTest.m */; };
-		A8A2BBE02722B91A00B2DEDC /* HNEventLibObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2BBDF2722B91A00B2DEDC /* HNEventLibObjectTest.m */; };
-		A8B48EB027281097009C71ED /* HNNetworkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B48EAF27281097009C71ED /* HNNetworkTest.m */; };
-		CB6EBAF322855222003CFBA8 /* cert.outdate.cer in Resources */ = {isa = PBXBuildFile; fileRef = CB6EBAEF22855222003CFBA8 /* cert.outdate.cer */; };
-		CB6EBAF422855222003CFBA8 /* ca.cer1 in Resources */ = {isa = PBXBuildFile; fileRef = CB6EBAF022855222003CFBA8 /* ca.cer1 */; };
-		CB6EBAF522855222003CFBA8 /* ca.der.cer in Resources */ = {isa = PBXBuildFile; fileRef = CB6EBAF122855222003CFBA8 /* ca.der.cer */; };
-		FCE7F19D263012660018EB14 /* HNEncryptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE7F19C263012660018EB14 /* HNEncryptTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		450BAFB227F5A17B004978EC /* HNNetworkInfoPropertyPluginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNNetworkInfoPropertyPluginTests.m; sourceTree = "<group>"; };
-		451427A02796B353004DE16C /* HNPresetPropertyObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPresetPropertyObjectTest.m; sourceTree = "<group>"; };
-		451427A22796BD85004DE16C /* HNPhonePresetPropertyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPhonePresetPropertyTest.m; sourceTree = "<group>"; };
-		451427A42796C5A1004DE16C /* HNCatalystPresetPropertyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNCatalystPresetPropertyTest.m; sourceTree = "<group>"; };
 		452472C6273E3ACB00865E44 /* HNDelegateProxyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDelegateProxyObject.h; sourceTree = "<group>"; };
 		452472C7273E3ACB00865E44 /* HNDelegateProxyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDelegateProxyObject.m; sourceTree = "<group>"; };
 		457A7CC227DB2AC900DB0512 /* HNNetworkInfoPropertyPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HNNetworkInfoPropertyPlugin.h; path = HinaDataSDK/Core/Network/HNNetworkInfoPropertyPlugin.h; sourceTree = SOURCE_ROOT; };
@@ -157,7 +100,6 @@
 		4D2D53B62591EB3A00805141 /* HNCommonUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNCommonUtility.m; sourceTree = "<group>"; };
 		4D2D53B72591EB3A00805141 /* HNValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNValidator.h; sourceTree = "<group>"; };
 		4D2D53B82591EB3A00805141 /* HNCommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNCommonUtility.h; sourceTree = "<group>"; };
-		4D3F15C32787ED5900C16EA3 /* HNVisualizedUtilsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNVisualizedUtilsTest.m; sourceTree = "<group>"; };
 		4D41D9D125FF7E9300D856F4 /* UIViewController+HNElementPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HNElementPath.h"; sourceTree = "<group>"; };
 		4D41D9D225FF7E9300D856F4 /* UIViewController+HNElementPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HNElementPath.m"; sourceTree = "<group>"; };
 		4D4DB2BD25B7D19B00938842 /* HNClassHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNClassHelper.h; sourceTree = "<group>"; };
@@ -174,9 +116,6 @@
 		4D5F3ABD2833AF73003A2C0A /* HNUpdateRecordInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNUpdateRecordInterceptor.m; sourceTree = "<group>"; };
 		4D5F3AC02833B280003A2C0A /* HNDatabaseInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDatabaseInterceptor.h; sourceTree = "<group>"; };
 		4D5F3AC12833B280003A2C0A /* HNDatabaseInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDatabaseInterceptor.m; sourceTree = "<group>"; };
-		4D6A188E22978F5B00F6B218 /* ElementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementViewController.m; sourceTree = "<group>"; };
-		4D6A188F22978F5B00F6B218 /* HNAutoTrackUtilsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAutoTrackUtilsTest.m; sourceTree = "<group>"; };
-		4D6A189022978F5B00F6B218 /* ElementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementViewController.h; sourceTree = "<group>"; };
 		4D6AE7EC26086ABE00A9CB08 /* HNVisualizedDebugLogTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNVisualizedDebugLogTracker.m; sourceTree = "<group>"; };
 		4D6AE7ED26086ABE00A9CB08 /* HNVisualizedDebugLogTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNVisualizedDebugLogTracker.h; sourceTree = "<group>"; };
 		4D6AE7FA26086E9300A9CB08 /* HNVisualizedEventCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNVisualizedEventCheck.h; sourceTree = "<group>"; };
@@ -287,7 +226,6 @@
 		880980822803DCBD00EB2B3D /* HNFlushJSONInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNFlushJSONInterceptor.m; sourceTree = "<group>"; };
 		8809808528040CC500EB2B3D /* HNFlushHTTPBodyInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNFlushHTTPBodyInterceptor.h; sourceTree = "<group>"; };
 		8809808628040CC500EB2B3D /* HNFlushHTTPBodyInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNFlushHTTPBodyInterceptor.m; sourceTree = "<group>"; };
-		880F37D924AC34A4005AC8A0 /* HNEventStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNEventStoreTests.m; sourceTree = "<group>"; };
 		881A40D3253D7B4F00854F69 /* HNSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNSecurityPolicy.m; sourceTree = "<group>"; };
 		881A40D4253D7B4F00854F69 /* NSString+HNHashCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HNHashCode.m"; sourceTree = "<group>"; };
 		881A40E7253D7B4F00854F69 /* HinaDataSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HinaDataSDK.m; sourceTree = "<group>"; };
@@ -325,14 +263,6 @@
 		883ED1A02768AF0900A0706A /* HNAESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAESCrypt.h; sourceTree = "<group>"; };
 		883ED1A927699A3500A0706A /* HNBaseStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNBaseStoreManager.m; sourceTree = "<group>"; };
 		884B423B25540D7C00416DB6 /* HinaDataSDK+Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HinaDataSDK+Public.h"; sourceTree = "<group>"; };
-		886CD6BF280FE60F006A6DBA /* HNInterceptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNInterceptorTests.m; sourceTree = "<group>"; };
-		886CD6C1280FEDF9006A6DBA /* HNSerialQueueInterceptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNSerialQueueInterceptorTests.m; sourceTree = "<group>"; };
-		886CD6C3280FF0FF006A6DBA /* HNDynamicSuperPropertyInterceptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDynamicSuperPropertyInterceptorTests.m; sourceTree = "<group>"; };
-		886CD6C5280FF2E8006A6DBA /* HNRemoteConfigInterceptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNRemoteConfigInterceptorTests.m; sourceTree = "<group>"; };
-		886CD6C728101C71006A6DBA /* HNEventValidateInterceptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNEventValidateInterceptorTests.m; sourceTree = "<group>"; };
-		886CD6C9281136D4006A6DBA /* HNIDMappingInterceptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNIDMappingInterceptorTests.m; sourceTree = "<group>"; };
-		886CD6CB28113FD2006A6DBA /* HNEventResultInterceptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNEventResultInterceptorTests.m; sourceTree = "<group>"; };
-		886E1E1D2726A0600084D1B3 /* HNPresetPropertyPluginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNPresetPropertyPluginTests.m; sourceTree = "<group>"; };
 		886E1E1F2726AC420084D1B3 /* HNDeviceIDPropertyPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDeviceIDPropertyPlugin.h; sourceTree = "<group>"; };
 		886E1E202726AC420084D1B3 /* HNDeviceIDPropertyPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDeviceIDPropertyPlugin.m; sourceTree = "<group>"; };
 		8876234A26E61AD80067F0B4 /* HNPropertyPluginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPropertyPluginManager.h; sourceTree = "<group>"; };
@@ -345,12 +275,6 @@
 		88BC39FE281543E000A98EDA /* HNPropertyPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPropertyPlugin.h; sourceTree = "<group>"; };
 		88BC39FF281543E000A98EDA /* HNPropertyPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPropertyPlugin.m; sourceTree = "<group>"; };
 		88BC3A0A281652D000A98EDA /* HNPropertyPlugin+HNPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HNPropertyPlugin+HNPrivate.h"; sourceTree = "<group>"; };
-		88C9062627589B0200A2712C /* HNAESStorePluginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HNAESStorePluginTests.m; path = ../../../../HNAESStorePluginTests.m; sourceTree = "<group>"; };
-		88C9062C2759EBF500A2712C /* HNFileStorePluginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNFileStorePluginTests.m; sourceTree = "<group>"; };
-		88C9062E2759EC2B00A2712C /* HNUserDefaultsStorePluginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNUserDefaultsStorePluginTests.m; sourceTree = "<group>"; };
-		88C906302759EEEE00A2712C /* HNBaseStoreManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNBaseStoreManagerTests.m; sourceTree = "<group>"; };
-		88E6BED3277F0CCA006B1E4C /* HNStoreManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNStoreManagerTests.m; sourceTree = "<group>"; };
-		88E6BED5278D2930006B1E4C /* HNDeviceIDPropertyPluginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDeviceIDPropertyPluginTests.m; sourceTree = "<group>"; };
 		88E6BEDB278ECE5E006B1E4C /* HNAppVersionPropertyPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNAppVersionPropertyPlugin.h; sourceTree = "<group>"; };
 		88E6BEDC278ECE5E006B1E4C /* HNAppVersionPropertyPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNAppVersionPropertyPlugin.m; sourceTree = "<group>"; };
 		88EC2DEF2757689800EF9778 /* HNStoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNStoreManager.h; sourceTree = "<group>"; };
@@ -370,12 +294,6 @@
 		88F21ADD2806C92B00EDAFF4 /* HNEventResultInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNEventResultInterceptor.m; sourceTree = "<group>"; };
 		88F21AE02806CC8400EDAFF4 /* HNPropertyInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPropertyInterceptor.h; sourceTree = "<group>"; };
 		88F21AE12806CC8400EDAFF4 /* HNPropertyInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPropertyInterceptor.m; sourceTree = "<group>"; };
-		88F21AEA28091B3700EDAFF4 /* HNFlowObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNFlowObjectTests.m; sourceTree = "<group>"; };
-		88F21AEC28091DD800EDAFF4 /* HNTaskObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNTaskObjectTests.m; sourceTree = "<group>"; };
-		88F21AEE28091DE800EDAFF4 /* HNNodeObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNNodeObjectTests.m; sourceTree = "<group>"; };
-		88F21AF028094F7F00EDAFF4 /* hina_data_node.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hina_data_node.json; sourceTree = "<group>"; };
-		88F21AF22809546000EDAFF4 /* hina_data_task.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hina_data_task.json; sourceTree = "<group>"; };
-		88F21AF428095EBE00EDAFF4 /* hina_data_flow.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hina_data_flow.json; sourceTree = "<group>"; };
 		88F5536F27FD6A3100D95E7C /* HNFlowObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNFlowObject.h; sourceTree = "<group>"; };
 		88F5537027FD6A3100D95E7C /* HNFlowObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNFlowObject.m; sourceTree = "<group>"; };
 		88F5537327FD6A3C00D95E7C /* HNTaskObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNTaskObject.h; sourceTree = "<group>"; };
@@ -388,13 +306,10 @@
 		88F5538527FD933600D95E7C /* HNDynamicSuperPropertyInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDynamicSuperPropertyInterceptor.m; sourceTree = "<group>"; };
 		88F562242817E455000AFBBF /* HNEventObjectFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNEventObjectFactory.h; sourceTree = "<group>"; };
 		88F562252817E455000AFBBF /* HNEventObjectFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNEventObjectFactory.m; sourceTree = "<group>"; };
-		88F772D8280FA60000B792BB /* HNFlowManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNFlowManagerTests.m; sourceTree = "<group>"; };
 		A806642626905F6C00FFDEBA /* HinaDataSDK+HNChannelMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HinaDataSDK+HNChannelMatch.m"; sourceTree = "<group>"; };
 		A806642726905F6C00FFDEBA /* HNChannelMatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNChannelMatchManager.h; sourceTree = "<group>"; };
 		A806642826905F6C00FFDEBA /* HinaDataSDK+HNChannelMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HinaDataSDK+HNChannelMatch.h"; sourceTree = "<group>"; };
 		A806642926905F6C00FFDEBA /* HNChannelMatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNChannelMatchManager.m; sourceTree = "<group>"; };
-		A826F51127292FB600934D3E /* HNKeyChainItemWrapperTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNKeyChainItemWrapperTest.m; sourceTree = "<group>"; };
-		A826F51727293C8B00934D3E /* HNTrackTimerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNTrackTimerTest.m; sourceTree = "<group>"; };
 		A82E893D267D918100475757 /* HNSecretKeyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNSecretKeyFactory.m; sourceTree = "<group>"; };
 		A82E893E267D918100475757 /* HNEncryptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNEncryptManager.m; sourceTree = "<group>"; };
 		A82E893F267D918100475757 /* HNAESEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAESEncryptor.h; sourceTree = "<group>"; };
@@ -412,9 +327,6 @@
 		A82E894B267D918100475757 /* HNECCEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNECCEncryptor.m; sourceTree = "<group>"; };
 		A82E894C267D918100475757 /* HNECCPluginEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNECCPluginEncryptor.m; sourceTree = "<group>"; };
 		A82E894D267D918100475757 /* HNRSAPluginEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNRSAPluginEncryptor.m; sourceTree = "<group>"; };
-		A8302C3B2726B2E6006E78CC /* HNProfileEventObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNProfileEventObjectTest.m; sourceTree = "<group>"; };
-		A8302C3D2726B900006E78CC /* HNPropertyValidatorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPropertyValidatorTest.m; sourceTree = "<group>"; };
-		A8302C3F2726C65A006E78CC /* HNTrackEventObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNTrackEventObjectTest.m; sourceTree = "<group>"; };
 		A8356D882656459A00FD64AA /* HNAutoTrackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAutoTrackManager.m; sourceTree = "<group>"; };
 		A8356D892656459A00FD64AA /* HNAutoTrackUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAutoTrackUtils.h; sourceTree = "<group>"; };
 		A8356D8A2656459A00FD64AA /* UIView+HNAutoTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HNAutoTrack.h"; sourceTree = "<group>"; };
@@ -456,19 +368,6 @@
 		A8356DB92656459A00FD64AA /* HNAppViewScreenTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAppViewScreenTracker.h; sourceTree = "<group>"; };
 		A8356DBA2656459A00FD64AA /* HNAppViewScreenTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAppViewScreenTracker.m; sourceTree = "<group>"; };
 		A8356DBB2656459A00FD64AA /* UIApplication+HNAutoTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HNAutoTrack.h"; sourceTree = "<group>"; };
-		A8A2BBBE2722AB4900B2DEDC /* HNURLUtilsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNURLUtilsTest.m; sourceTree = "<group>"; };
-		A8A2BBC02722AB4900B2DEDC /* HNNSStringHashCodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNNSStringHashCodeTest.m; sourceTree = "<group>"; };
-		A8A2BBC12722AB4900B2DEDC /* HNJSONUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNJSONUtilTest.m; sourceTree = "<group>"; };
-		A8A2BBC22722AB4900B2DEDC /* HNCommonUtilityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNCommonUtilityTest.m; sourceTree = "<group>"; };
-		A8A2BBC32722AB4900B2DEDC /* HNGzipUtilityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNGzipUtilityTest.m; sourceTree = "<group>"; };
-		A8A2BBC42722AB4900B2DEDC /* HNValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNValidatorTest.m; sourceTree = "<group>"; };
-		A8A2BBC52722AB4900B2DEDC /* HNUtilsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNUtilsTest.m; sourceTree = "<group>"; };
-		A8A2BBC62722AB4900B2DEDC /* HNDateFormatterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNDateFormatterTest.m; sourceTree = "<group>"; };
-		A8A2BBD12722AB6100B2DEDC /* HNLogMessageTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNLogMessageTest.m; sourceTree = "<group>"; };
-		A8A2BBD52722AB6F00B2DEDC /* HNIdentifierTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNIdentifierTest.m; sourceTree = "<group>"; };
-		A8A2BBDD2722AF8300B2DEDC /* HNBaseEventObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNBaseEventObjectTest.m; sourceTree = "<group>"; };
-		A8A2BBDF2722B91A00B2DEDC /* HNEventLibObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNEventLibObjectTest.m; sourceTree = "<group>"; };
-		A8B48EAF27281097009C71ED /* HNNetworkTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNNetworkTest.m; sourceTree = "<group>"; };
 		A8BCC4A72686C2D800B72040 /* HNConfigOptions+Encrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HNConfigOptions+Encrypt.m"; sourceTree = "<group>"; };
 		A8BCC4A92686C42D00B72040 /* HNSecretKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSecretKey.h; sourceTree = "<group>"; };
 		A8BCC4AA2686C42D00B72040 /* HNSecretKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNSecretKey.m; sourceTree = "<group>"; };
@@ -492,11 +391,6 @@
 		A8FEFB2B277C0ADA0011D0BB /* HNSessionProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNSessionProperty.m; sourceTree = "<group>"; };
 		CB30C02E22840EBF0004061D /* HinaDataSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HinaDataSDK.bundle; sourceTree = "<group>"; };
 		CB6EBAE3228551EC003CFBA8 /* HinaDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HinaDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB6EBAE5228551EC003CFBA8 /* HinaDataTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HinaDataTest.m; sourceTree = "<group>"; };
-		CB6EBAE7228551EC003CFBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB6EBAEF22855222003CFBA8 /* cert.outdate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.outdate.cer; sourceTree = "<group>"; };
-		CB6EBAF022855222003CFBA8 /* ca.cer1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca.cer1; sourceTree = "<group>"; };
-		CB6EBAF122855222003CFBA8 /* ca.der.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = ca.der.cer; sourceTree = "<group>"; };
 		F200094D28BDADB5003C5113 /* UITableViewCell+HNIndexPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+HNIndexPath.h"; sourceTree = "<group>"; };
 		F200094E28BDADB5003C5113 /* UITableViewCell+HNIndexPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+HNIndexPath.m"; sourceTree = "<group>"; };
 		F200095128BDE7DE003C5113 /* UIAlertController+HNSimilarPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+HNSimilarPath.h"; sourceTree = "<group>"; };
@@ -518,7 +412,6 @@
 		F209BEB628B360A6000CEE49 /* UIView+ExposureIdentifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ExposureIdentifier.m"; sourceTree = "<group>"; };
 		F211741F26E9A72B00D65E19 /* HNApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNApplication.h; sourceTree = "<group>"; };
 		F211742026E9A72B00D65E19 /* HNApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNApplication.m; sourceTree = "<group>"; };
-		F214CE57249A07DF00A2633D /* HNDatabaseUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HNDatabaseUnitTest.m; path = HinaDataTests/Tracker/HNDatabaseUnitTest.m; sourceTree = SOURCE_ROOT; };
 		F21C226528F7B0E500847823 /* NSDictionary+HNCopyProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HNCopyProperties.h"; sourceTree = "<group>"; };
 		F21C226628F7B0E500847823 /* NSDictionary+HNCopyProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HNCopyProperties.m"; sourceTree = "<group>"; };
 		F226E66A28BC6149000443A7 /* HNUIProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNUIProperties.h; sourceTree = "<group>"; };
@@ -616,7 +509,6 @@
 		FC0028EF2629756400A18FE3 /* HNConfigOptions+Encrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HNConfigOptions+Encrypt.h"; sourceTree = "<group>"; };
 		FC0A8C61276334F200109267 /* HNDeepLinkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDeepLinkConstants.h; sourceTree = "<group>"; };
 		FC0A8C62276334F200109267 /* HNDeepLinkConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDeepLinkConstants.m; sourceTree = "<group>"; };
-		FC23719423D0519A00DDD708 /* HNLinkHandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNLinkHandlerTests.m; sourceTree = "<group>"; };
 		FC332DE527672606009122FC /* HNDeepLinkProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDeepLinkProcessor.h; sourceTree = "<group>"; };
 		FC332DE627672606009122FC /* HNDeepLinkProcessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDeepLinkProcessor.m; sourceTree = "<group>"; };
 		FCBECDF127DEDF4200361D6C /* HNQueryDeepLinkProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNQueryDeepLinkProcessor.h; sourceTree = "<group>"; };
@@ -627,10 +519,8 @@
 		FCBECDFA27DEDF7200361D6C /* HNRequestDeepLinkProcessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNRequestDeepLinkProcessor.m; sourceTree = "<group>"; };
 		FCBECDFD27DEDF7F00361D6C /* HNDeferredDeepLinkProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDeferredDeepLinkProcessor.h; sourceTree = "<group>"; };
 		FCBECDFE27DEDF7F00361D6C /* HNDeferredDeepLinkProcessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDeferredDeepLinkProcessor.m; sourceTree = "<group>"; };
-		FCC02F1B26CB9FB900DB8F54 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/iOSSupport/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
 		FCC02F2826CE4EF700DB8F54 /* HNUserAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNUserAgent.h; sourceTree = "<group>"; };
 		FCC02F2926CE4EF700DB8F54 /* HNUserAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNUserAgent.m; sourceTree = "<group>"; };
-		FCE7F19C263012660018EB14 /* HNEncryptTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNEncryptTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -850,24 +740,6 @@
 			path = TrackTimer;
 			sourceTree = "<group>";
 		};
-		4D3F15C12787ECF600C16EA3 /* Visualized */ = {
-			isa = PBXGroup;
-			children = (
-				4D3F15C32787ED5900C16EA3 /* HNVisualizedUtilsTest.m */,
-			);
-			path = Visualized;
-			sourceTree = "<group>";
-		};
-		4D6A188D22978F5B00F6B218 /* AutoTrack */ = {
-			isa = PBXGroup;
-			children = (
-				4D6A189022978F5B00F6B218 /* ElementViewController.h */,
-				4D6A188E22978F5B00F6B218 /* ElementViewController.m */,
-				4D6A188F22978F5B00F6B218 /* HNAutoTrackUtilsTest.m */,
-			);
-			path = AutoTrack;
-			sourceTree = "<group>";
-		};
 		4D6AE7EB26086ABE00A9CB08 /* DebugLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -904,7 +776,6 @@
 		4D8CE4C522E872B400829B29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FCC02F1B26CB9FB900DB8F54 /* SafariServices.framework */,
 				4D8CE4C622E872B400829B29 /* Security.framework */,
 			);
 			name = Frameworks;
@@ -982,15 +853,6 @@
 				4DD128B325F8A003008C0B1E /* HNVisualPropertiesConfigSources.m */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		880F37D824AC31A6005AC8A0 /* Tracker */ = {
-			isa = PBXGroup;
-			children = (
-				F214CE57249A07DF00A2633D /* HNDatabaseUnitTest.m */,
-				880F37D924AC34A4005AC8A0 /* HNEventStoreTests.m */,
-			);
-			path = Tracker;
 			sourceTree = "<group>";
 		};
 		881A40D2253D7B4F00854F69 /* Core */ = {
@@ -1131,29 +993,6 @@
 			path = Exception;
 			sourceTree = "<group>";
 		};
-		886CD6BC280FE565006A6DBA /* Interceptor */ = {
-			isa = PBXGroup;
-			children = (
-				886CD6C1280FEDF9006A6DBA /* HNSerialQueueInterceptorTests.m */,
-				886CD6C3280FF0FF006A6DBA /* HNDynamicSuperPropertyInterceptorTests.m */,
-				886CD6C5280FF2E8006A6DBA /* HNRemoteConfigInterceptorTests.m */,
-				886CD6C728101C71006A6DBA /* HNEventValidateInterceptorTests.m */,
-				886CD6C9281136D4006A6DBA /* HNIDMappingInterceptorTests.m */,
-				886CD6CB28113FD2006A6DBA /* HNEventResultInterceptorTests.m */,
-			);
-			path = Interceptor;
-			sourceTree = "<group>";
-		};
-		886E1E1C2726A0600084D1B3 /* PropertyPlugin */ = {
-			isa = PBXGroup;
-			children = (
-				886E1E1D2726A0600084D1B3 /* HNPresetPropertyPluginTests.m */,
-				88E6BED5278D2930006B1E4C /* HNDeviceIDPropertyPluginTests.m */,
-				450BAFB227F5A17B004978EC /* HNNetworkInfoPropertyPluginTests.m */,
-			);
-			path = PropertyPlugin;
-			sourceTree = "<group>";
-		};
 		8876234926E61AB20067F0B4 /* PropertyPlugin */ = {
 			isa = PBXGroup;
 			children = (
@@ -1170,18 +1009,6 @@
 				4DAFDCE7282622810074A691 /* HNCustomPropertyPlugin.m */,
 			);
 			path = PropertyPlugin;
-			sourceTree = "<group>";
-		};
-		88C9062527589AE800A2712C /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				88C9062627589B0200A2712C /* HNAESStorePluginTests.m */,
-				88C9062C2759EBF500A2712C /* HNFileStorePluginTests.m */,
-				88C9062E2759EC2B00A2712C /* HNUserDefaultsStorePluginTests.m */,
-				88C906302759EEEE00A2712C /* HNBaseStoreManagerTests.m */,
-				88E6BED3277F0CCA006B1E4C /* HNStoreManagerTests.m */,
-			);
-			path = Store;
 			sourceTree = "<group>";
 		};
 		88EC2DEE2757688400EF9778 /* Store */ = {
@@ -1217,21 +1044,6 @@
 				88F5537027FD6A3100D95E7C /* HNFlowObject.m */,
 				88ED6BCE27BE2ECB00888FBC /* HNFlowManager.h */,
 				88ED6BCF27BE2ECB00888FBC /* HNFlowManager.m */,
-			);
-			path = Flow;
-			sourceTree = "<group>";
-		};
-		88F21AE428081CDC00EDAFF4 /* Flow */ = {
-			isa = PBXGroup;
-			children = (
-				88F21AF028094F7F00EDAFF4 /* hina_data_node.json */,
-				88F21AF22809546000EDAFF4 /* hina_data_task.json */,
-				88F21AF428095EBE00EDAFF4 /* hina_data_flow.json */,
-				886CD6BF280FE60F006A6DBA /* HNInterceptorTests.m */,
-				88F21AEA28091B3700EDAFF4 /* HNFlowObjectTests.m */,
-				88F21AEC28091DD800EDAFF4 /* HNTaskObjectTests.m */,
-				88F21AEE28091DE800EDAFF4 /* HNNodeObjectTests.m */,
-				88F772D8280FA60000B792BB /* HNFlowManagerTests.m */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -1414,61 +1226,6 @@
 			path = AppViewScreen;
 			sourceTree = "<group>";
 		};
-		A8A2BBBD2722AB4900B2DEDC /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				A8A2BBBE2722AB4900B2DEDC /* HNURLUtilsTest.m */,
-				A8A2BBC02722AB4900B2DEDC /* HNNSStringHashCodeTest.m */,
-				A8A2BBC12722AB4900B2DEDC /* HNJSONUtilTest.m */,
-				A8A2BBC22722AB4900B2DEDC /* HNCommonUtilityTest.m */,
-				A8A2BBC32722AB4900B2DEDC /* HNGzipUtilityTest.m */,
-				A8A2BBC42722AB4900B2DEDC /* HNValidatorTest.m */,
-				A8A2BBC52722AB4900B2DEDC /* HNUtilsTest.m */,
-				A8A2BBC62722AB4900B2DEDC /* HNDateFormatterTest.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		A8A2BBD02722AB6100B2DEDC /* HNLogger */ = {
-			isa = PBXGroup;
-			children = (
-				A8A2BBD12722AB6100B2DEDC /* HNLogMessageTest.m */,
-			);
-			path = HNLogger;
-			sourceTree = "<group>";
-		};
-		A8A2BBD32722AB6F00B2DEDC /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				A8A2BBDC2722AF6F00B2DEDC /* EventObject */,
-				A8A2BBD52722AB6F00B2DEDC /* HNIdentifierTest.m */,
-				451427A02796B353004DE16C /* HNPresetPropertyObjectTest.m */,
-				451427A22796BD85004DE16C /* HNPhonePresetPropertyTest.m */,
-				451427A42796C5A1004DE16C /* HNCatalystPresetPropertyTest.m */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		A8A2BBDC2722AF6F00B2DEDC /* EventObject */ = {
-			isa = PBXGroup;
-			children = (
-				A8A2BBDD2722AF8300B2DEDC /* HNBaseEventObjectTest.m */,
-				A8A2BBDF2722B91A00B2DEDC /* HNEventLibObjectTest.m */,
-				A8302C3B2726B2E6006E78CC /* HNProfileEventObjectTest.m */,
-				A8302C3D2726B900006E78CC /* HNPropertyValidatorTest.m */,
-				A8302C3F2726C65A006E78CC /* HNTrackEventObjectTest.m */,
-			);
-			path = EventObject;
-			sourceTree = "<group>";
-		};
-		A8B48EAE27281071009C71ED /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				A8B48EAF27281097009C71ED /* HNNetworkTest.m */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		A8BCC4D626872A3F00B72040 /* Deeplink */ = {
 			isa = PBXGroup;
 			children = (
@@ -1537,7 +1294,6 @@
 			isa = PBXGroup;
 			children = (
 				CB30BFD122840EBF0004061D /* HinaDataSDK */,
-				CB6EBAE4228551EC003CFBA8 /* HinaDataTests */,
 				CB30BD5522840CA40004061D /* Products */,
 				4D8CE4C522E872B400829B29 /* Frameworks */,
 			);
@@ -1582,41 +1338,6 @@
 				CB30C02E22840EBF0004061D /* HinaDataSDK.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		CB6EBAE4228551EC003CFBA8 /* HinaDataTests */ = {
-			isa = PBXGroup;
-			children = (
-				886CD6BC280FE565006A6DBA /* Interceptor */,
-				88F21AE428081CDC00EDAFF4 /* Flow */,
-				886E1E1C2726A0600084D1B3 /* PropertyPlugin */,
-				88C9062527589AE800A2712C /* Store */,
-				4D3F15C12787ECF600C16EA3 /* Visualized */,
-				A8B48EAE27281071009C71ED /* Network */,
-				A8A2BBD32722AB6F00B2DEDC /* Builder */,
-				A8A2BBD02722AB6100B2DEDC /* HNLogger */,
-				A8A2BBBD2722AB4900B2DEDC /* Utils */,
-				880F37D824AC31A6005AC8A0 /* Tracker */,
-				4D6A188D22978F5B00F6B218 /* AutoTrack */,
-				CB6EBAEE22855222003CFBA8 /* Resources */,
-				FCE7F19C263012660018EB14 /* HNEncryptTests.m */,
-				FC23719423D0519A00DDD708 /* HNLinkHandlerTests.m */,
-				A826F51127292FB600934D3E /* HNKeyChainItemWrapperTest.m */,
-				A826F51727293C8B00934D3E /* HNTrackTimerTest.m */,
-				CB6EBAE5228551EC003CFBA8 /* HinaDataTest.m */,
-				CB6EBAE7228551EC003CFBA8 /* Info.plist */,
-			);
-			path = HinaDataTests;
-			sourceTree = "<group>";
-		};
-		CB6EBAEE22855222003CFBA8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CB6EBAEF22855222003CFBA8 /* cert.outdate.cer */,
-				CB6EBAF022855222003CFBA8 /* ca.cer1 */,
-				CB6EBAF122855222003CFBA8 /* ca.der.cer */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		F226E66928BC6099000443A7 /* UIRelated */ = {
@@ -1837,12 +1558,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F21AF528095EBE00EDAFF4 /* hina_data_flow.json in Resources */,
-				88F21AF128094F7F00EDAFF4 /* hina_data_node.json in Resources */,
-				CB6EBAF422855222003CFBA8 /* ca.cer1 in Resources */,
-				CB6EBAF522855222003CFBA8 /* ca.der.cer in Resources */,
-				CB6EBAF322855222003CFBA8 /* cert.outdate.cer in Resources */,
-				88F21AF32809546000EDAFF4 /* hina_data_task.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1853,64 +1568,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F21AEF28091DE800EDAFF4 /* HNNodeObjectTests.m in Sources */,
 				88C9062827589B0A00A2712C /* HNAESStorePlugin.m in Sources */,
-				886CD6C4280FF0FF006A6DBA /* HNDynamicSuperPropertyInterceptorTests.m in Sources */,
-				88C906312759EEEE00A2712C /* HNBaseStoreManagerTests.m in Sources */,
 				88F21AE528081D3900EDAFF4 /* HNNodeObject.m in Sources */,
-				88C9062727589B0200A2712C /* HNAESStorePluginTests.m in Sources */,
-				88C9062D2759EBF500A2712C /* HNFileStorePluginTests.m in Sources */,
-				450BAFB327F5A17B004978EC /* HNNetworkInfoPropertyPluginTests.m in Sources */,
 				883ED1AB27699A3500A0706A /* HNBaseStoreManager.m in Sources */,
 				883ED1A22768AF0900A0706A /* HNAESCrypt.m in Sources */,
-				88C9062F2759EC2B00A2712C /* HNUserDefaultsStorePluginTests.m in Sources */,
-				88E6BED4277F0CCA006B1E4C /* HNStoreManagerTests.m in Sources */,
-				451427A52796C5A1004DE16C /* HNCatalystPresetPropertyTest.m in Sources */,
 				88C9062927589B0C00A2712C /* HNUserDefaultsStorePlugin.m in Sources */,
-				88F21AEB28091B3700EDAFF4 /* HNFlowObjectTests.m in Sources */,
-				4D6A189122978F5B00F6B218 /* ElementViewController.m in Sources */,
-				451427A12796B353004DE16C /* HNPresetPropertyObjectTest.m in Sources */,
 				88C9062A27589B1100A2712C /* HNFileStorePlugin.m in Sources */,
-				A8A2BBCB2722AB4900B2DEDC /* HNCommonUtilityTest.m in Sources */,
-				886CD6C0280FE60F006A6DBA /* HNInterceptorTests.m in Sources */,
-				4DDE42D329262A1F007EDA27 /* HNAutoTrackUtilsTest.m in Sources */,
-				A8A2BBDE2722AF8300B2DEDC /* HNBaseEventObjectTest.m in Sources */,
-				A826F51827293C8B00934D3E /* HNTrackTimerTest.m in Sources */,
-				886E1E1E2726A0600084D1B3 /* HNPresetPropertyPluginTests.m in Sources */,
-				88F21AED28091DD800EDAFF4 /* HNTaskObjectTests.m in Sources */,
-				A8A2BBCC2722AB4900B2DEDC /* HNGzipUtilityTest.m in Sources */,
-				A8302C3E2726B900006E78CC /* HNPropertyValidatorTest.m in Sources */,
 				88F21AE828081D4400EDAFF4 /* HNFlowObject.m in Sources */,
-				4D3F15C42787ED5900C16EA3 /* HNVisualizedUtilsTest.m in Sources */,
-				A8A2BBCD2722AB4900B2DEDC /* HNValidatorTest.m in Sources */,
-				A8A2BBCA2722AB4900B2DEDC /* HNJSONUtilTest.m in Sources */,
-				A826F51227292FB600934D3E /* HNKeyChainItemWrapperTest.m in Sources */,
-				A8A2BBC72722AB4900B2DEDC /* HNURLUtilsTest.m in Sources */,
-				A8302C402726C65A006E78CC /* HNTrackEventObjectTest.m in Sources */,
-				A8A2BBC92722AB4900B2DEDC /* HNNSStringHashCodeTest.m in Sources */,
-				886CD6C2280FEDF9006A6DBA /* HNSerialQueueInterceptorTests.m in Sources */,
-				451427A32796BD85004DE16C /* HNPhonePresetPropertyTest.m in Sources */,
-				A8A2BBCE2722AB4900B2DEDC /* HNUtilsTest.m in Sources */,
-				886CD6C6280FF2E8006A6DBA /* HNRemoteConfigInterceptorTests.m in Sources */,
-				A8A2BBCF2722AB4900B2DEDC /* HNDateFormatterTest.m in Sources */,
-				A8B48EB027281097009C71ED /* HNNetworkTest.m in Sources */,
-				886CD6CC28113FD2006A6DBA /* HNEventResultInterceptorTests.m in Sources */,
-				4DDE42D529262A2D007EDA27 /* HinaDataTest.m in Sources */,
-				88F772D9280FA60000B792BB /* HNFlowManagerTests.m in Sources */,
 				88F21AE728081D4100EDAFF4 /* HNTaskObject.m in Sources */,
-				4D6A189122978F5B00F6B218 /* ElementViewController.m in Sources */,
-				A8A2BBD82722AB6F00B2DEDC /* HNIdentifierTest.m in Sources */,
-				886CD6CA281136D4006A6DBA /* HNIDMappingInterceptorTests.m in Sources */,
-				886CD6C828101C71006A6DBA /* HNEventValidateInterceptorTests.m in Sources */,
 				88F21AE928081D4600EDAFF4 /* HNFlowManager.m in Sources */,
-				A8302C3C2726B2E6006E78CC /* HNProfileEventObjectTest.m in Sources */,
-				4DDE42D129262A13007EDA27 /* HNDatabaseUnitTest.m in Sources */,
-				A8A2BBE02722B91A00B2DEDC /* HNEventLibObjectTest.m in Sources */,
 				88F21AE628081D3D00EDAFF4 /* HNFlowData.m in Sources */,
-				4DDE42D229262A18007EDA27 /* HNEventStoreTests.m in Sources */,
-				88E6BED6278D2930006B1E4C /* HNDeviceIDPropertyPluginTests.m in Sources */,
-				A8A2BBD22722AB6100B2DEDC /* HNLogMessageTest.m in Sources */,
-				FCE7F19D263012660018EB14 /* HNEncryptTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2042,7 +1709,7 @@
 				DEVELOPMENT_TEAM = 5ANGCGXGPK;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = HinaDataTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2060,7 +1727,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ANGCGXGPK;
 				INFOPLIST_FILE = HinaDataTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/baofu/Desktop/new_hn_data_sdk/hn-sdk-ios-master/HinaDataSDK.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Example/Example.xcodeproj">
    </FileRef>
 </Workspace>
