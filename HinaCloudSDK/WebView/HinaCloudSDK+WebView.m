@@ -23,7 +23,7 @@
 #endif
 
 #if __has_include("HinaCloudSDK+WKWebView.h")
-#error This file cannot exist at the same time with `HinaCloudSDK+WKWebView.h`. If you use `UIWebView`, please delete it.
+//#error This file cannot exist at the same time with `HinaCloudSDK+WKWebView.h`. If you use `UIWebView`, please delete it.
 #endif
 
 #import "HinaCloudSDK+WebView.h"

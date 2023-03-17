@@ -23,7 +23,7 @@
 #endif
 
 #if __has_include("HinaCloudSDK+WebView.h")
-#error This file cannot exist at the same time with `HinaCloudSDK+WebView.h`. If you usen't `UIWebView`, please delete it.
+//#error This file cannot exist at the same time with `HinaCloudSDK+WebView.h`. If you usen't `UIWebView`, please delete it.
 #endif
 
 #import "HinaCloudSDK+WKWebView.h"
@@ -242,7 +242,7 @@ static NSString * const kSAJSTrackEventNativeScheme = @"sensorsanalytics://track
         [libProperties setValue:self.loginId forKey:kSAEventDistinctId];
         [libProperties setValue:[NSNumber numberWithBool:YES] forKey:@"is_login"];
     } else{
-        [libProperties setValue:self.anonymousId forKey:kSAEventDistinctId];
+        [libProperties setValue:self.deviceUId forKey:kSAEventDistinctId];
         [libProperties setValue:[NSNumber numberWithBool:NO] forKey:@"is_login"];
     }
     return [libProperties copy];
