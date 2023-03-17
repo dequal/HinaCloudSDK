@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.1.4" }
+  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.1.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
