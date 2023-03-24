@@ -16,11 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HinaCloudSDK"
-<<<<<<< HEAD
-  spec.version      = "1.0.5"
-=======
   spec.version      = "1.0.3"
->>>>>>> parent of 909ffa3 (combine sdk tag=0.2.0 version=1.0.4)
   spec.summary      = "HinaCloudSDK是一款埋点SDK。"
 
   # This description is used to generate tags and improve search results.
@@ -82,11 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-<<<<<<< HEAD
-  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.2.2" }
-=======
-  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.1.9" }
->>>>>>> parent of 909ffa3 (combine sdk tag=0.2.0 version=1.0.4)
+  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.2.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
