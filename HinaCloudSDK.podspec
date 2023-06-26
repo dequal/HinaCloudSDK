@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HinaCloudSDK"
-  spec.version      = "3.3.1"
+  spec.version      = "3.3.2"
   spec.summary      = "HinaCloudSDK是一款埋点SDK。"
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.2.8" }
+  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.2.9" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -122,7 +122,7 @@ Pod::Spec.new do |spec|
   # spec.libraries = 'icucore', 'z'
 
     # 本库提供的framework静态库
-  spec.vendored_frameworks = 'Sources/*.framework'
+  spec.vendored_frameworks = 'Sources/*.xcframework'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -135,7 +135,7 @@ Pod::Spec.new do |spec|
   # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 
   # spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7' }
-  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' }
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
   # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
