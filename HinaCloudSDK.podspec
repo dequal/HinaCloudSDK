@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.3.1" }
+  spec.source       = { :git => "https://github.com/dequal/HinaCloudSDK.git", :tag => "0.3.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -122,7 +122,7 @@ Pod::Spec.new do |spec|
   # spec.libraries = 'icucore', 'z'
 
     # 本库提供的framework静态库
-  spec.vendored_frameworks = 'Sources/*.xcframework'
+  spec.vendored_frameworks = 'Sources/*.framework'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -134,8 +134,8 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 
-  # spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7' }
-  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7' }
+  # spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
   # spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
