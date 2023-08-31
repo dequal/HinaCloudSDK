@@ -3,9 +3,9 @@
 #import <Foundation/Foundation.h>
 
 /**
- SAAppExtensionDataManager 扩展应用的数据管理类
+ HNAppExtensionDataManager 扩展应用的数据管理类
  */
-@interface SAAppExtensionDataManager : NSObject {
+@interface HNAppExtensionDataManager : NSObject {
     NSArray * _groupIdentifierArray;
 }
 

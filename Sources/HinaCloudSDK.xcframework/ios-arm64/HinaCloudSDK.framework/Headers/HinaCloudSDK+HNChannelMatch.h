@@ -4,7 +4,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HinaCloudSDK (SAChannelMatch)
+@interface HinaCloudSDK (HNChannelMatch)
 
 /**
  调用 track 接口并附加渠道信息
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * 用于在 App 首次启动时追踪渠道来源，SDK 会将渠道值填入事件属性 $utm_ 开头的一系列属性中
+ * 用于在 App 首次启动时追踪渠道来源，SDK 会将渠道值填入事件属性 H_utm_ 开头的一系列属性中
  *
  * @discussion
  * 注意：如果之前使用 -  trackInstallation: 触发的激活事件，需要继续保持原来的调用，无需改成 - trackAppInstall: ，否则会导致激活事件数据分离。
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * 用于在 App 首次启动时追踪渠道来源，SDK 会将渠道值填入事件属性 $utm_ 开头的一系列属性中
+ * 用于在 App 首次启动时追踪渠道来源，SDK 会将渠道值填入事件属性 H_utm_ 开头的一系列属性中
  *
  * @discussion
  * 注意：如果之前使用 -  trackInstallation: 触发的激活事件，需要继续保持原来的调用，无需改成 - trackAppInstall: ，否则会导致激活事件数据分离。
@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * 用于在 App 首次启动时追踪渠道来源，SDK 会将渠道值填入事件属性 $utm_ 开头的一系列属性中
+ * 用于在 App 首次启动时追踪渠道来源，SDK 会将渠道值填入事件属性 H_utm_ 开头的一系列属性中
  *
  * @discussion
  * 注意：如果之前使用 -  trackInstallation: 触发的激活事件，需要继续保持原来的调用，无需改成 - trackAppInstall: ，否则会导致激活事件数据分离。
@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * 用于在 App 首次启动时追踪渠道来源，SDK 会将渠道值填入事件属性 $utm_ 开头的一系列属性中
+ * 用于在 App 首次启动时追踪渠道来源，SDK 会将渠道值填入事件属性 H_utm_ 开头的一系列属性中
  * 使用该接口
  *
  *
@@ -65,7 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * 用于在 App 首次启动时追踪渠道来源，并设置追踪渠道事件的属性。SDK 会将渠道值填入事件属性 $utm_ 开头的一系列属性中。
+ * 用于在 App 首次启动时追踪渠道来源，并设置追踪渠道事件的属性。SDK 会将渠道值填入事件属性 H_utm_ 开头的一系列属性中。
  *
  * @discussion
  * propertyDict 是一个 Map。
@@ -81,7 +81,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * 用于在 App 首次启动时追踪渠道来源，并设置追踪渠道事件的属性。SDK 会将渠道值填入事件属性 $utm_ 开头的一系列属性中。
+ * 用于在 App 首次启动时追踪渠道来源，并设置追踪渠道事件的属性。SDK 会将渠道值填入事件属性 H_utm_ 开头的一系列属性中。
  *
  * @discussion
  * propertyDict 是一个 Map。

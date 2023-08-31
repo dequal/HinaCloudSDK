@@ -1,20 +1,20 @@
 
 
 #import <Foundation/Foundation.h>
-#import "SAStorePlugin.h"
+#import "HNStorePlugin.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^SAStoreManagerCompletion)(id _Nullable object);
+typedef void(^HNStoreManagerCompletion)(id _Nullable object);
 
-@interface SABaseStoreManager : NSObject
+@interface HNBaseStoreManager : NSObject
 
-- (void)registerStorePlugin:(id<SAStorePlugin>)plugin;
+- (void)registerStorePlugin:(id<HNStorePlugin>)plugin;
 
 #pragma mark - get
 
 - (nullable id)objectForKey:(NSString *)key;
-- (void)objectForKey:(NSString *)key completion:(SAStoreManagerCompletion)completion;
+- (void)objectForKey:(NSString *)key completion:(HNStoreManagerCompletion)completion;
 
 - (nullable NSString *)stringForKey:(NSString *)key;
 - (nullable NSArray *)arrayForKey:(NSString *)key;

@@ -4,13 +4,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, SATLandingPageType) {
-    SATLandingPageTypeIntelligence = 0,
-    SATLandingPageTypeOther,
-    SATLandingPageTypeUndefined,
+typedef NS_ENUM(NSUInteger, HNTLandingPageType) {
+    HNTLandingPageTypeIntelligence = 0,
+    HNTLandingPageTypeOther,
+    HNTLandingPageTypeUndefined,
 };
 
-@interface SATUTMProperties : NSObject
+@interface HNTUTMProperties : NSObject
 
 /// channel_utm_campaign
 @property (nonatomic, copy, nullable) NSString *campaign;
@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, SATLandingPageType) {
 
 @end
 
-@interface SASlinkResponse : NSObject
+@interface HNSlinkResponse : NSObject
 
 /// status code when creating slink, such as 0 indicate that slink was created successfully
 @property (nonatomic, assign, readonly) NSInteger statusCode;
@@ -51,7 +51,7 @@ typedef NS_ENUM(NSUInteger, SATLandingPageType) {
 
 @end
 
-@interface SASlinkCreator : NSObject
+@interface HNSlinkCreator : NSObject
 
 /// name for slink
 @property (nonatomic, copy, nullable) NSString *name;
@@ -60,7 +60,7 @@ typedef NS_ENUM(NSUInteger, SATLandingPageType) {
 @property (nonatomic, copy, nullable) NSString *uriSchemeSuffix;
 
 /// landing page type, such as intelligence or other
-@property (nonatomic, assign) SATLandingPageType landingPageType;
+@property (nonatomic, assign) HNTLandingPageType landingPageType;
 
 /// redirect url once slink opened on other devices, such as PC, not mobile devices
 @property (nonatomic, copy, nullable) NSString *redirectURLOnOtherDevice;
@@ -75,7 +75,7 @@ typedef NS_ENUM(NSUInteger, SATLandingPageType) {
 @property (nonatomic, copy, nullable) NSDictionary *customParams;
 
 /// utm properties
-@property (nonatomic, strong, nullable) SATUTMProperties *utmProperties;
+@property (nonatomic, strong, nullable) HNTUTMProperties *utmProperties;
 
 /// system params
 @property (nonatomic, copy, nullable) NSDictionary *systemParams;
@@ -93,7 +93,7 @@ typedef NS_ENUM(NSUInteger, SATLandingPageType) {
 
 /// create slink
 /// @param completion completion when creating slink
-- (void)createSlinkWithCompletion:(nullable void (^)(SASlinkResponse *response))completion;
+- (void)createSlinkWithCompletion:(nullable void (^)(HNSlinkResponse *response))completion;
 
 @end
 

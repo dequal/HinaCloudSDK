@@ -4,7 +4,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SAExposureConfig : NSObject
+@interface HNExposureConfig : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
 

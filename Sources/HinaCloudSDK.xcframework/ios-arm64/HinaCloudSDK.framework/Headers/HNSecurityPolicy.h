@@ -1,23 +1,23 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, SASSLPinningMode) {
-    SASSLPinningModeNone,
-    SASSLPinningModePublicKey,
-    SASSLPinningModeCertificate,
+typedef NS_ENUM(NSUInteger, HNSSLPinningMode) {
+    HNSSLPinningModeNone,
+    HNSSLPinningModePublicKey,
+    HNSSLPinningModeCertificate,
 };
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- SASecurityPolicy 是参考 AFSecurityPolicy 实现
+ HNSecurityPolicy 是参考 AFSecurityPolicy 实现
  使用方法与 AFSecurityPolicy 相同
  感谢 AFNetworking: https://github.com/AFNetworking/AFNetworking
  */
-@interface SASecurityPolicy : NSObject <NSSecureCoding, NSCopying>
+@interface HNSecurityPolicy : NSObject <NSSecureCoding, NSCopying>
 
-/// 证书验证类型，默认为：SASSLPinningModeNone
-@property (readonly, nonatomic, assign) SASSLPinningMode SSLPinningMode;
+/// 证书验证类型，默认为：HNSSLPinningModeNone
+@property (readonly, nonatomic, assign) HNSSLPinningMode SSLPinningMode;
 
 /// 证书数据
 @property (nonatomic, strong, nullable) NSSet <NSData *> *pinnedCertificates;
@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param pinningMode 类型
  @return 初始化对象
  */
-+ (instancetype)policyWithPinningMode:(SASSLPinningMode)pinningMode;
++ (instancetype)policyWithPinningMode:(HNSSLPinningMode)pinningMode;
 
 /**
  通过 mode 及 证书数据，初始化一个验证对象
@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param pinnedCertificates 证书数据
  @return 初始化对象
  */
-+ (instancetype)policyWithPinningMode:(SASSLPinningMode)pinningMode withPinnedCertificates:(NSSet <NSData *> *)pinnedCertificates;
++ (instancetype)policyWithPinningMode:(HNSSLPinningMode)pinningMode withPinnedCertificates:(NSSet <NSData *> *)pinnedCertificates;
 
 /**
  是否通过验证

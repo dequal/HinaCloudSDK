@@ -12,14 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @discussion
  * 属性的约束请参考 track:withProperties:
  */
-@protocol SAAutoTracker <NSObject>
+@protocol HNAutoTracker <NSObject>
 
 @required
 - (NSDictionary *)getTrackProperties;
 
 @end
 
-@protocol SAScreenAutoTracker <SAAutoTracker>
+@protocol HNScreenAutoTracker <HNAutoTracker>
 
 @optional
 - (BOOL)isIgnoredAutoTrackViewScreen;
@@ -29,9 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark -
 
-@interface HinaCloudSDK (SAAutoTrack)
+@interface HinaCloudSDK (HNAutoTrack)
 
-- (UIViewController *_Nullable)currentViewController;
+- (UIViewController *_Nullable)getCurrentViewController;
 
 /**
  * @abstract
@@ -47,11 +47,11 @@ NS_ASSUME_NONNULL_BEGIN
  * @abstract
  * 判断某个 AutoTrack 事件类型是否被忽略
  *
- * @param eventType SensorsAnalyticsAutoTrackEventType 要判断的 AutoTrack 事件类型
+ * @param eventType HinaCloudAutoTrackEventType 要判断的 AutoTrack 事件类型
  *
  * @return YES:被忽略; NO:没有被忽略
  */
-- (BOOL)isAutoTrackEventTypeIgnored:(SensorsAnalyticsAutoTrackEventType)eventType;
+- (BOOL)isAutoTrackEventTypeIgnored:(HinaCloudAutoTrackEventType)eventType;
 
 /**
  * @abstract
@@ -87,13 +87,13 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return YES:被忽略; NO:没有被忽略
  */
-- (BOOL)isViewControllerIgnored:(UIViewController *)viewController;
+- (BOOL)isVCIgnored:(UIViewController *)viewController;
 
 #pragma mark - Track
 
 /**
  * @abstract
- * 通过代码触发 UIView 的 $AppClick 事件
+ * 通过代码触发 UIView 的 H_AppClick 事件
  *
  * @param view UIView
  */
@@ -101,7 +101,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * 通过代码触发 UIView 的 $AppClick 事件
+ * 通过代码触发 UIView 的 H_AppClick 事件
  *
  * @param view UIView
  * @param properties 自定义属性
@@ -110,7 +110,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * 通过代码触发 UIViewController 的 $AppViewScreen 事件
+ * 通过代码触发 UIViewController 的 H_AppViewScreen 事件
  *
  * @param viewController 当前的 UIViewController
  */
@@ -119,7 +119,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * Track $AppViewScreen事件
+ * Track H_AppViewScreen事件
  *
  * @param url 当前页面url
  * @param properties 用户扩展属性
@@ -135,7 +135,7 @@ NS_ASSUME_NONNULL_BEGIN
  * 打开 SDK 自动追踪,默认只追踪App 启动 / 关闭、进入页面、元素点击
  * 该功能默认关闭
  */
-- (void)enableAutoTrack:(SensorsAnalyticsAutoTrackEventType)eventType __attribute__((deprecated("已过时，请参考 HNBuildOptions 类的 autoTrackEventType")));
+- (void)enableAutoTrack:(HinaCloudAutoTrackEventType)eventType __attribute__((deprecated("已过时，请参考 HNBuildOptions 类的 autoTrackEventType")));
 
 @end
 
@@ -166,10 +166,9 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @discussion
  * 该功能自动追踪 App 的一些行为，例如 SDK 初始化、App 启动 / 关闭、进入页面 等等，具体信息请参考文档:
- *   https://sensorsdata.cn/manual/ios_sdk.html
  * 该功能默认关闭
  */
-@property (nonatomic) SensorsAnalyticsAutoTrackEventType autoTrackEventType API_UNAVAILABLE(macos);
+@property (nonatomic) HinaCloudAutoTrackEventType autoTrackEventType API_UNAVAILABLE(macos);
 
 @end
 

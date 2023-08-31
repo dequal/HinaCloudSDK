@@ -1,11 +1,11 @@
 
 
 #import <Foundation/Foundation.h>
-#import "SAStorePlugin.h"
+#import "HNStorePlugin.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SAAESStorePlugin : NSObject <SAStorePlugin>
+@interface HNAESStorePlugin : NSObject <HNStorePlugin>
 
 @end
 

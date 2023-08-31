@@ -4,38 +4,38 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SAUIViewAutoTrackDelegate <NSObject>
+@protocol HNUIViewAutoTrackDelegate <NSObject>
 
 //UITableView
 @optional
-- (NSDictionary *)sensorsAnalytics_tableView:(UITableView *)tableView autoTrackPropertiesAtIndexPath:(NSIndexPath *)indexPath;
+- (NSDictionary *)hinaCloud_tableView:(UITableView *)tableView autoTrackPropertiesAtIndexPath:(NSIndexPath *)indexPath;
 
 //UICollectionView
 @optional
-- (NSDictionary *)sensorsAnalytics_collectionView:(UICollectionView *)collectionView autoTrackPropertiesAtIndexPath:(NSIndexPath *)indexPath;
+- (NSDictionary *)hinaCloud_collectionView:(UICollectionView *)collectionView autoTrackPropertiesAtIndexPath:(NSIndexPath *)indexPath;
 @end
 
-@interface UIView (SensorsAnalytics)
+@interface UIView (HinaCloud)
 
 /// viewID
-@property (nonatomic, copy) NSString *sensorsAnalyticsViewID;
+@property (nonatomic, copy) NSString *hinaCloudViewID;
 
 /// AutoTrack 时，是否忽略该 View
 @property (nonatomic, assign) BOOL hinaDataIgnoreView;
 
 /// AutoTrack 发生在 SendAction 之前还是之后，默认是 SendAction 之前
-@property (nonatomic, assign) BOOL sensorsAnalyticsAutoTrackAfterSendAction;
+@property (nonatomic, assign) BOOL hinaCloudAutoTrackAfterSendAction;
 
 /// AutoTrack 时，View 的扩展属性
-@property (nonatomic, strong) NSDictionary *sensorsAnalyticsViewProperties;
+@property (nonatomic, strong) NSDictionary *hinaCloudViewProperties;
 
-@property (nonatomic, weak, nullable) id<SAUIViewAutoTrackDelegate> sensorsAnalyticsDelegate;
+@property (nonatomic, weak, nullable) id<HNUIViewAutoTrackDelegate> hinaCloudDelegate;
 
 @end
 
-@interface UIImage (SensorsAnalytics)
+@interface UIImage (HinaCloud)
 
-@property (nonatomic, copy) NSString* sensorsAnalyticsImageName;
+@property (nonatomic, copy) NSString* hinaCloudImageName;
 
 @end
 

@@ -3,7 +3,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HinaCloudSDK (SAAppExtension)
+@interface HinaCloudSDK (HNAppExtension)
 
 /**
  @abstract

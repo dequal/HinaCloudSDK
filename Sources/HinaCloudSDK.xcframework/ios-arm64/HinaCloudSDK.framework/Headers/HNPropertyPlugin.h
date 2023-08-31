@@ -1,36 +1,36 @@
 
 #import <Foundation/Foundation.h>
-#import "SAConstants.h"
+#import "HNConstants.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, SAPropertyPluginPriority) {
-    SAPropertyPluginPriorityLow = 250,
-    SAPropertyPluginPriorityDefault = 500,
-    SAPropertyPluginPriorityHigh = 750,
+typedef NS_ENUM(NSUInteger, HNPropertyPluginPriority) {
+    HNPropertyPluginPriorityLow = 250,
+    HNPropertyPluginPriorityDefault = 500,
+    HNPropertyPluginPriorityHigh = 750,
 };
 
 #pragma mark -
 
-@protocol SAPropertyPluginLibFilter <NSObject>
+@protocol HNPropertyPluginLibFilter <NSObject>
 
 @property (nonatomic, copy, readonly) NSString *lib;
 @property (nonatomic, copy, readonly) NSString *method;
 @property (nonatomic, copy, readonly) NSString *version;
 @property (nonatomic, strong, readonly) id appVersion;
 
-// $AppClick 和 $AppViewScreen 全埋点会采集
+// H_AppClick 和 H_AppViewScreen 全埋点会采集
 @property (nonatomic, copy, nullable, readonly) NSString *detail;
 
 @end
 
-@protocol SAPropertyPluginEventFilter <NSObject>
+@protocol HNPropertyPluginEventFilter <NSObject>
 
 @property (nonatomic, copy, readonly) NSString *event;
-@property (nonatomic, assign, readonly) SAEventType type;
+@property (nonatomic, assign, readonly) HNEventType type;
 @property (nonatomic, assign, readonly) UInt64 time;
 
-@property (nonatomic, strong, readonly) id<SAPropertyPluginLibFilter> lib;
+@property (nonatomic, strong, readonly) id<HNPropertyPluginLibFilter> lib;
 
 /// 是否为 H5 打通事件
 @property (nonatomic, assign, readonly) BOOL hybridH5;
@@ -38,7 +38,7 @@ typedef NS_ENUM(NSUInteger, SAPropertyPluginPriority) {
 @end
 
 /// 属性插件协议，解决异步插件插件的阻塞问题
-@protocol SAPropertyPluginProtocol <NSObject>
+@protocol HNPropertyPluginProtocol <NSObject>
 
 @optional
 
@@ -57,7 +57,7 @@ typedef NS_ENUM(NSUInteger, SAPropertyPluginPriority) {
 
 #pragma mark -
 
-typedef void(^SAPropertyPluginHandler)(NSDictionary<NSString *, id> *properties);
+typedef void(^HNPropertyPluginHandler)(NSDictionary<NSString *, id> *properties);
 
 #pragma mark -
 
@@ -72,12 +72,12 @@ typedef void(^SAPropertyPluginHandler)(NSDictionary<NSString *, id> *properties)
 ///
 /// 方案二：如插件中需要处理多线程，可以重写 `- prepare` 方法，并在该方法中进行属性采集。
 /// 注意：属性采集完成之后，请在最后调用 `- readyWithProperties:`，表示已经完成属性采集。
-@interface SAPropertyPlugin : NSObject <SAPropertyPluginProtocol>
+@interface HNPropertyPlugin : NSObject <HNPropertyPluginProtocol>
 
 /// 属性优先级
 ///
-/// 默认为： SAPropertyPluginPriorityDefault
-- (SAPropertyPluginPriority)priority;
+/// 默认为： HNPropertyPluginPriorityDefault
+- (HNPropertyPluginPriority)priority;
 
 /// 通过事件筛选器来判断是否匹配当前插件
 ///
@@ -85,7 +85,7 @@ typedef void(^SAPropertyPluginHandler)(NSDictionary<NSString *, id> *properties)
 ///
 /// @param filter 事件相关信息的筛选器，包含事件相关信息
 /// @return 是否匹配
-- (BOOL)isMatchedWithFilter:(id<SAPropertyPluginEventFilter>)filter;
+- (BOOL)isMatchedWithFilter:(id<HNPropertyPluginEventFilter>)filter;
 
 /// 属性插件采集的属性
 ///
@@ -98,9 +98,9 @@ typedef void(^SAPropertyPluginHandler)(NSDictionary<NSString *, id> *properties)
 
 #pragma mark -
 
-@interface SAPropertyPlugin (SAPublic)
+@interface HNPropertyPlugin (HNPublic)
 
-@property (nonatomic, strong, readonly, nullable) id<SAPropertyPluginEventFilter> filter;
+@property (nonatomic, strong, readonly, nullable) id<HNPropertyPluginEventFilter> filter;
 
 /// 请在 `- prepare` 方法执行完成后调用这个方法
 /// @param properties 采集到的属性

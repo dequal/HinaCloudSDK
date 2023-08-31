@@ -3,7 +3,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SAStorePlugin <NSObject>
+@protocol HNStorePlugin <NSObject>
 
 - (NSString *)type;
 
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 该方法可能会调用多次，每次调用会传入之前注册的插件
 ///
 /// @param oldPlugin 旧插件
-- (void)upgradeWithOldPlugin:(id<SAStorePlugin>)oldPlugin;
+- (void)upgradeWithOldPlugin:(id<HNStorePlugin>)oldPlugin;
 
 - (nullable id)objectForKey:(NSString *)key;
 - (void)setObject:(nullable id)value forKey:(NSString *)key;

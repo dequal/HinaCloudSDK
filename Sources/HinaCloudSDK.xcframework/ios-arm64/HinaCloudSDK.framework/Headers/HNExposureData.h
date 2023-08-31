@@ -1,10 +1,10 @@
 
 
-#import "SAExposureConfig.h"
+#import "HNExposureConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SAExposureData : NSObject
+@interface HNExposureData : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -27,14 +27,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param event event name
 /// @param properties custom event properties, if no, use nil
 /// @param config exposure config, if nil, use global config in HNBuildOptions
-- (instancetype)initWithEvent:(NSString *)event properties:(nullable NSDictionary *)properties config:(nullable SAExposureConfig *)config;
+- (instancetype)initWithEvent:(NSString *)event properties:(nullable NSDictionary *)properties config:(nullable HNExposureConfig *)config;
 
 /// init method
 /// @param event event name
 /// @param properties custom event properties, if no, use nil
 /// @param exposureIdentifier identifier for view
 /// @param config exposure config, if nil, use global config in HNBuildOptions
-- (instancetype)initWithEvent:(NSString *)event properties:(nullable NSDictionary *)properties exposureIdentifier:(nullable NSString *)exposureIdentifier config:(nullable SAExposureConfig *)config;
+- (instancetype)initWithEvent:(NSString *)event properties:(nullable NSDictionary *)properties exposureIdentifier:(nullable NSString *)exposureIdentifier config:(nullable HNExposureConfig *)config;
 
 @end
 
