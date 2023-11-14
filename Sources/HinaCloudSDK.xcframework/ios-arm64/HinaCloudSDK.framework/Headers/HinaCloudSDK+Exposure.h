@@ -7,7 +7,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HinaCloudSDK (Exposure)
 
-- (void)addExposureView:(UIView *)view withData:(HNExposureData *)data;
+- (void)addExposureView:(UIView *)view withData:(SAExposureData *)data;
 - (void)removeExposureView:(UIView *)view withExposureIdentifier:(nullable NSString *)identifier;
 
 @end

@@ -3,14 +3,14 @@
 #import <Foundation/Foundation.h>
 
 #import "HinaCloudSDK+Public.h"
-#import "HNSecurityPolicy.h"
+#import "SASecurityPolicy.h"
 #import "HNBuildOptions.h"
-#import "HNConstants.h"
+#import "SAConstants.h"
 
 
 //HinaCloudSDK section
-#if __has_include("HinaCloudSDK+HNChannelMatch.h")
-#import "HinaCloudSDK+HNChannelMatch.h"
+#if __has_include("HinaCloudSDK+SAChannelMatch.h")
+#import "HinaCloudSDK+SAChannelMatch.h"
 #endif
 
 #if __has_include("HinaCloudSDK+DebugMode.h")
@@ -21,16 +21,16 @@
 #import "HinaCloudSDK+DeepLink.h"
 #endif
 
-#if __has_include("HinaCloudSDK+HNAutoTrack.h")
-#import "HinaCloudSDK+HNAutoTrack.h"
+#if __has_include("HinaCloudSDK+SAAutoTrack.h")
+#import "HinaCloudSDK+SAAutoTrack.h"
 #endif
 
 #if __has_include("HinaCloudSDK+Visualized.h")
 #import "HinaCloudSDK+Visualized.h"
 #endif
 
-#if __has_include("HNSecretKey.h")
-#import "HNSecretKey.h"
+#if __has_include("SASecretKey.h")
+#import "SASecretKey.h"
 #endif
 
 #if __has_include("HinaCloudSDK+JavaScriptBridge.h")
@@ -73,8 +73,8 @@
 #import "HinaCloudSDK+WebView.h"
 #endif
 
-#if __has_include("HinaCloudSDK+HNAppExtension.h")
-#import "HinaCloudSDK+HNAppExtension.h"
+#if __has_include("HinaCloudSDK+SAAppExtension.h")
+#import "HinaCloudSDK+SAAppExtension.h"
 #endif
 
 #if __has_include("HNBuildOptions+Exposure.h")
@@ -86,4 +86,4 @@
 #endif
 
 
-#import "HNAESStorePlugin.h"
+#import "SAAESStorePlugin.h"
