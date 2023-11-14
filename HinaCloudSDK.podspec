@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "HinaCloudSDK"
   spec.version      = "3.9.0"
-  spec.summary      = "HinaCloudSDK是一款埋点SDK。"
+  spec.summary      = "海纳嗨数SDK。"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
