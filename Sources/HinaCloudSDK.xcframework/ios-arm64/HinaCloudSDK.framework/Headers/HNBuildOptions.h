@@ -1,12 +1,12 @@
 
 
 #import <Foundation/Foundation.h>
-#import "SAStorePlugin.h"
-#import "SAConstants.h"
-#import "SAPropertyPlugin.h"
+#import "HNStorePlugin.h"
+#import "HNConstants.h"
+#import "HNPropertyPlugin.h"
 
-@class SASecretKey;
-@class SASecurityPolicy;
+@class HNSecretKey;
+@class HNSecurityPolicy;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -37,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion
  默认使用 defaultPolicy
  */
-@property (nonatomic, strong) SASecurityPolicy *securityPolicy API_UNAVAILABLE(macos);
+@property (nonatomic, strong) HNSecurityPolicy *securityPolicy API_UNAVAILABLE(macos);
 
 /**
  * @abstract
@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
  * 本地缓存的最大事件数目，当累积日志量达到阈值时发送数据
  *
  * @discussion
- * 默认值为 100，在每次调用 track 和 profileSet 等接口的时候，都会检查如下条件，以判断是否向服务器上传数据:
+ * 默认值为 100，在每次调用 track 和 userSet 等接口的时候，都会检查如下条件，以判断是否向服务器上传数据:
  * 1. 是否 WIFI/3G/4G/5G 网络
  * 2. 是否满足以下数据发送条件之一:
  *   1) 与上次发送的时间间隔是否大于 flushInterval
@@ -94,15 +94,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 禁用后，SDK 将不会触发事件，也不会发送网络请求
 @property (nonatomic, assign) BOOL disableSDK;
 
-
 /// App 进入后台时是否等待数据发送结果。默认 NO，不会等待数据发送结果；设置 YES，会等待数据发送结果
 @property (nonatomic, assign) BOOL flushBeforeEnterBackground;
-
-/// 是否进行 session 切割。默认 NO，不会进行 session 切割；设置 YES，会进行 session 切割
-@property (nonatomic, assign) BOOL enableSession;
-
-/// 设置 session 切割事件最大间隔时长，设置范围为正整数，单位为秒
-@property (nonatomic, assign) NSInteger eventSessionTimeout;
 
 /// 是否禁用采集 deviceId
 @property (nonatomic, assign) BOOL disableDeviceId;
@@ -110,7 +103,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// set instant events
 @property (nonatomic, copy) NSArray<NSString *> *instantEvents;
 
-- (void)registerStorePlugin:(id<SAStorePlugin>)plugin;
+- (void)registerStorePlugin:(id<HNStorePlugin>)plugin;
 
 /**
  * @abstract
@@ -118,9 +111,9 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @param plugin 属性插件对象
  */
-- (void)registerPropertyPlugin:(SAPropertyPlugin *)plugin;
+- (void)registerPropertyPlugin:(HNPropertyPlugin *)plugin;
 
-- (void)registerLimitKeys:(NSDictionary<SALimitKey, NSString *> *)keys;
+- (void)registerLimitKeys:(NSDictionary<HNLimitKey, NSString *> *)keys;
 
 @end
 

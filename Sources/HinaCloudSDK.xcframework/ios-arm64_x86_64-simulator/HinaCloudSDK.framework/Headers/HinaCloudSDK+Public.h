@@ -1,27 +1,27 @@
 
 
 #import <Foundation/Foundation.h>
-#import "SAConstants.h"
-#import "SAPropertyPlugin.h"
+#import "HNConstants.h"
+#import "HNPropertyPlugin.h"
 
-@class SASecurityPolicy;
+@class HNSecurityPolicy;
 @class HNBuildOptions;
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString * const SensorsAnalyticsIdentityKeyIDFA;
-extern NSString * const SensorsAnalyticsIdentityKeyMobile;
-extern NSString * const SensorsAnalyticsIdentityKeyEmail;
+extern NSString * const HinaCloudIdentityKeyIDFA;
+extern NSString * const HinaCloudIdentityKeyMobile;
+extern NSString * const HinaCloudIdentityKeyEmail;
 
 /**
  * @class
  * HinaCloudSDK 类
  *
  * @abstract
- * 在 SDK 中嵌入 SensorsAnalytics 的 SDK 并进行使用的主要 API
+ * 在 SDK 中嵌入 HinaCloud 的 SDK 并进行使用的主要 API
  *
  * @discussion
- * 使用 HinaCloudSDK 类来跟踪用户行为，并且把数据发给所指定的 SensorsAnalytics 的服务。
+ * 使用 HinaCloudSDK 类来跟踪用户行为，并且把数据发给所指定的 HinaCloud 的服务。
  */
 @interface HinaCloudSDK : NSObject
 
@@ -49,7 +49,7 @@ extern NSString * const SensorsAnalyticsIdentityKeyEmail;
      1、必须在应用启动时调用，即在 application:didFinishLaunchingWithOptions: 中调用，
      2、必须在主线线程中调用
      3、必须在 SDK 其他方法调用之前调用
- 如果不符合上述条件，存在丢失 $AppStart 事件及应用首页的 $AppViewScreen 事件风险
+ 如果不符合上述条件，存在丢失 H_AppStart 事件及应用首页的 H_AppViewScreen 事件风险
 
  @param configOptions 参数配置
  */
@@ -109,33 +109,12 @@ extern NSString * const SensorsAnalyticsIdentityKeyEmail;
 
 #pragma mark--cache and flush
 
-/**
- * @abstract
- * 登录，设置当前用户的 loginId
- *
- * @param loginId 当前用户的 loginId
- */
+
 - (void)setUserUId:(NSString *)loginId;
 
-/**
- 登录，设置当前用户的 loginId
-
- 触发 $SignUp 事件。
- ⚠️属性为事件属性，非用户属性
-
- @param loginId 当前用户的登录 id
- @param properties $SignUp 事件的事件属性
- */
 - (void)login:(NSString *)loginId withProperties:(NSDictionary * _Nullable )properties;
 
-/**
- ID-Mapping 3.0 登录，设置当前用户的 loginIDKey 和 loginId
 
- ⚠️ 此接口为 ID-Mapping 3.0 特殊场景下特定接口，请咨询确认后再使用
-
- @param key 当前用户的登录 ID key
- @param loginId 当前用户的登录 ID
- */
 - (void)loginWithKey:(NSString *)key loginId:(NSString *)loginId;
 
 /**
@@ -343,7 +322,7 @@ extern NSString * const SensorsAnalyticsIdentityKeyEmail;
  */
 - (void)trackEventCallback:(BOOL (^)(NSString *eventName, NSMutableDictionary<NSString *, id> *properties))callback;
 
-- (void)registerLimitKeys:(NSDictionary<SALimitKey, NSString *> *)keys;
+- (void)registerLimitKeys:(NSDictionary<HNLimitKey, NSString *> *)keys;
 
 /**
  * @abstract
@@ -408,7 +387,7 @@ extern NSString * const SensorsAnalyticsIdentityKeyEmail;
  *
  * @param plugin 属性插件对象
  */
-- (void)registerPropertyPlugin:(SAPropertyPlugin *)plugin;
+- (void)registerPropertyPlugin:(HNPropertyPlugin *)plugin;
 
 /**
  * @abstract
@@ -612,7 +591,7 @@ extern NSString * const SensorsAnalyticsIdentityKeyEmail;
  * 清除 keychain 缓存数据
  *
  * @discussion
- * 注意：清除 keychain 中 kSAService 名下的数据，包括 distinct_id 标记。
+ * 注意：清除 keychain 中 kHNService 名下的数据，包括 account_id 标记。
  *
  */
 - (void)clearKeychainData API_UNAVAILABLE(macos);
@@ -681,7 +660,7 @@ extern NSString * const SensorsAnalyticsIdentityKeyEmail;
 /**
  @param debugMode 调试模式
  */
-- (void)setDebugMode:(SensorsAnalyticsDebugMode)debugMode __attribute__((deprecated("已过时，建议动态开启调试模式"))) API_UNAVAILABLE(macos);
+- (void)setDebugMode:(HinaCloudDebugMode)debugMode __attribute__((deprecated("已过时，建议动态开启调试模式"))) API_UNAVAILABLE(macos);
 
 /**
  * @abstract
@@ -710,7 +689,7 @@ extern NSString * const SensorsAnalyticsIdentityKeyEmail;
  * @param event             event 的名称
  * @param timeUnit          计时单位，毫秒/秒/分钟/小时
  */
-- (void)trackTimer:(NSString *)event withTimeUnit:(SensorsAnalyticsTimeUnit)timeUnit __attribute__((deprecated("已过时，请参考 trackTimerStart")));
+- (void)trackTimer:(NSString *)event withTimeUnit:(HinaCloudTimeUnit)timeUnit __attribute__((deprecated("已过时，请参考 trackTimerStart")));
 
 @end
 

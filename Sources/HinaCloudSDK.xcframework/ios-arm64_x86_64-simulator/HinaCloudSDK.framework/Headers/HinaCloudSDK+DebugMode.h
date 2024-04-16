@@ -8,7 +8,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @abstract
- * 设置是否显示 debugInfoView，对于 iOS，是 UIAlertView／UIAlertController
+ * 设置是否显示 debugInfoView
  *
  * @discussion
  * 设置是否显示 debugInfoView，默认显示
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)showDebugInfoView:(BOOL)show API_UNAVAILABLE(macos);
 
-- (SensorsAnalyticsDebugMode)debugMode;
+- (HinaCloudDebugMode)debugMode;
 
 @end
 
