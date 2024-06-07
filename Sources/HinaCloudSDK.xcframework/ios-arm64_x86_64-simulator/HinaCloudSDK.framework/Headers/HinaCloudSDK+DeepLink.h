@@ -1,11 +1,11 @@
 
 
 #import "HinaCloudSDK.h"
-#import "SASlinkCreator.h"
+#import "HNSlinkCreator.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SADeepLinkObject : NSObject
+@interface HNDeepLinkObject : NSObject
 
 /// DeepLink 获取归因数据时的应用内参数
 @property (nonatomic, copy, nullable) NSString *params;
@@ -36,7 +36,7 @@ DeepLink 回调函数
 - (void)setDeeplinkCallback:(void(^)(NSString *_Nullable params, BOOL success, NSInteger appAwakePassedTime))callback API_UNAVAILABLE(macos) __attribute__((deprecated("已过时，请参考 setDeepLinkCompletion")));
 
 /**
-触发 $AppDeepLinkLaunch 事件
+触发 H_AppDeepLinkLaunch 事件
 @param url 唤起 App 的 DeepLink url
 */
 - (void)trackDeepLinkLaunchWithURL:(NSString *)url API_UNAVAILABLE(macos);
@@ -56,7 +56,7 @@ DeepLink 回调函数
   若您同时实现了 setDeepLinkCompletion 和 setDeeplinkCallback 两个 API，SDK 内部也只会回调 setDeepLinkCompletion 回调函数。
  @param completion 唤起后的回调函数，当页面跳转成功时，completion 返回值 return YES，反之则 return NO
  */
-- (void)setDeepLinkCompletion:(BOOL(^)(SADeepLinkObject *_Nullable obj))completion API_UNAVAILABLE(macos);
+- (void)setDeepLinkCompletion:(BOOL(^)(HNDeepLinkObject *_Nullable obj))completion API_UNAVAILABLE(macos);
 
 @end
 

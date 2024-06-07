@@ -3,7 +3,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (SAExposureIdentifier)
+@interface UIView (HNExposureIdentifier)
 
 @property (nonatomic, copy, nullable) NSString *exposureIdentifier;
 
