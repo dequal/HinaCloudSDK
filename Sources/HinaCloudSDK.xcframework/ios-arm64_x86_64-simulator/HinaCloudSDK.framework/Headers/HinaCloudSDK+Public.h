@@ -39,7 +39,7 @@ extern NSString * const HinaCloudIdentityKeyEmail;
  * @abstract
  * 用户登录唯一标识符
  */
-@property (atomic, readonly, copy) NSString *loginId;
+@property (atomic, readonly, copy) NSString *userUId;
 
 #pragma mark- init instance
 /**
@@ -388,6 +388,14 @@ extern NSString * const HinaCloudIdentityKeyEmail;
  * @param plugin 属性插件对象
  */
 - (void)registerPropertyPlugin:(HNPropertyPlugin *)plugin;
+
+/**
+ * @abstract
+ * 注销属性插件
+ *
+ * @param pluginClass 插件类型
+ */
+- (void)unregisterPropertyPluginWithPluginClass:(Class)pluginClass;
 
 /**
  * @abstract
