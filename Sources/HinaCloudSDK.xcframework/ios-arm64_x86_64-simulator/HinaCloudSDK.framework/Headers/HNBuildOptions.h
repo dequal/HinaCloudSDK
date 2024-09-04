@@ -103,6 +103,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// set instant events
 @property (nonatomic, copy) NSArray<NSString *> *instantEvents;
 
+
+/**
+ * @property
+ *
+ * @abstract
+ * 属性值的最大长度 ,取值区间在[1024,5120]
+ *
+ * @discussion
+ * 1.最大长度默认为1024，上限5120;  2.超出最大长度的属性截断；取值区间在[1024,5120]
+ */
+@property (nonatomic) NSInteger maxPropertyValueLength;
+
+
 - (void)registerStorePlugin:(id<HNStorePlugin>)plugin;
 
 /**
