@@ -579,6 +579,8 @@ extern NSString * const HinaCloudIdentityKeyEmail;
  * @param content description
  */
 - (void)append:(NSString *)profile by:(NSObject<NSFastEnumeration> *)content;
+// 4.0.3新增, -userAppend 与之前的 -append 完全一致
+- (void)userAppend:(NSString *)profile by:(NSObject<NSFastEnumeration> *)content;
 
 /**
  * @abstract
