@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/HNConstants.h</key>
 		<data>
-		gioZj4CFvzFFh0LMFH5vbiZyH5w=
+		Thq6TGh6g9QzDlQ0V6J9GsIAp1I=
 		</data>
 		<key>Headers/HNExposureConfig.h</key>
 		<data>
@@ -124,14 +124,14 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5R6crzKdFVnWfnTsgmgVNjVHUW0=
+			nXm+U+/WXLUg3p1AQ9k6hkO+eJ8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		zulzf803BcNI5vNhpY/uhwand98=
+		SMCKIRrj6OdVWeDUw7hN5zVAVY0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -232,11 +232,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gioZj4CFvzFFh0LMFH5vbiZyH5w=
+			Thq6TGh6g9QzDlQ0V6J9GsIAp1I=
 			</data>
 			<key>hash2</key>
 			<data>
-			DTB7dNGIQmet3RhAlD6O2IVT3DLCeYuyltLjkoF9Dio=
+			OdGCq/+l2jW+k28brqQ+HA/GHBXHxeonXrMeF3VPAtU=
 			</data>
 		</dict>
 		<key>Headers/HNExposureConfig.h</key>
@@ -463,11 +463,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5R6crzKdFVnWfnTsgmgVNjVHUW0=
+			nXm+U+/WXLUg3p1AQ9k6hkO+eJ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wv9CRL76X7NCN7NVJUFoVy7x3dvP2iFZjZMtgaUgRes=
+			ICAgVDsTj7ehh2GqQQgFfOyAzvQVFj/lFRIygvdQ3Jg=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -115,4 +115,4 @@ typedef NS_OPTIONS(NSUInteger, HNEventType) {
 typedef NSString *HNLimitKey NS_TYPED_EXTENSIBLE_ENUM;
 FOUNDATION_EXTERN HNLimitKey const HNLimitKeyIDFA;
 FOUNDATION_EXTERN HNLimitKey const HNLimitKeyIDFV;
-FOUNDATION_EXTERN HNLimitKey const HNLimitKeyCarrier;
+

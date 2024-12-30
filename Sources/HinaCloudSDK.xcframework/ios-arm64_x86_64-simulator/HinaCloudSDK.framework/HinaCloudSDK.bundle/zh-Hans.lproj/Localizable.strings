@@ -90,15 +90,6 @@
 "HNAlertOK" = "确定";
 "HNAlertNotRemind" = "不再提示";
 
-// 预置属性
-"HNPresetPropertyCarrierMobile" = "中国移动";
-"HNPresetPropertyCarrierUnicom" = "中国联通";
-"HNPresetPropertyCarrierTelecom" = "中国电信";
-"HNPresetPropertyCarrierSatellite" = "中国卫通";
-"HNPresetPropertyCarrierTietong" = "中国铁通";
-
-
-
 // Visual
 "HNVisualizedAutoTrack" = "可视化全埋点";
 "HNVisualizedPageErrorTitle" = "当前页面无法进行可视化全埋点";
