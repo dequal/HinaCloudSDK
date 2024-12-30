@@ -76,10 +76,6 @@
 		<data>
 		Ot5oZKoP9VsKAvmqjwScHY0TmHo=
 		</data>
-		<key>Headers/HinaCloudSDK+DeviceOrientation.h</key>
-		<data>
-		Ju0TuFrotk0B1XWKlBj415TEQM8=
-		</data>
 		<key>Headers/HinaCloudSDK+Exposure.h</key>
 		<data>
 		8aKpO4gwupNk5oNVT45j7XhILsA=
@@ -99,10 +95,6 @@
 		<key>Headers/HinaCloudSDK+JavaScriptBridge.h</key>
 		<data>
 		nejOcMd6/QqcqomF9YF1FSvAqL8=
-		</data>
-		<key>Headers/HinaCloudSDK+Location.h</key>
-		<data>
-		P6/PSxCTkSY1OFLC3VrM5jIBJVc=
 		</data>
 		<key>Headers/HinaCloudSDK+Public.h</key>
 		<data>
@@ -338,17 +330,6 @@
 			Kq3Pply8cm/2Hsl7P18n5Wl3fn11V3f3zLvSIbBRI7M=
 			</data>
 		</dict>
-		<key>Headers/HinaCloudSDK+DeviceOrientation.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ju0TuFrotk0B1XWKlBj415TEQM8=
-			</data>
-			<key>hash2</key>
-			<data>
-			GR+hQpZu+blqMtMIqix8ipPRFpN+WSJutpW33bMK7Wg=
-			</data>
-		</dict>
 		<key>Headers/HinaCloudSDK+Exposure.h</key>
 		<dict>
 			<key>hash</key>
@@ -402,17 +383,6 @@
 			<key>hash2</key>
 			<data>
 			kBKzNqsrBLo3N2moojZgn1O2Yhj+IZi6J5tSG4Z9Rgw=
-			</data>
-		</dict>
-		<key>Headers/HinaCloudSDK+Location.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P6/PSxCTkSY1OFLC3VrM5jIBJVc=
-			</data>
-			<key>hash2</key>
-			<data>
-			eRTRlaDwvO4v4jmdPhuMwj8sQ5Z6vQdFEGeEel990OI=
 			</data>
 		</dict>
 		<key>Headers/HinaCloudSDK+Public.h</key>
